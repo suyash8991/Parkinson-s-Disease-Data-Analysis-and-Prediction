@@ -1,0 +1,7 @@
+pandas
+scikit-learn
+xgboost
+imbalanced-learn
+joblib
+seaborn
+numpy==1.23.5
