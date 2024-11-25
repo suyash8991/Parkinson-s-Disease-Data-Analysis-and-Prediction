@@ -14,7 +14,7 @@ def main():
     eda.summarize_data()
     eda.check_missing_values()
     # eda.class_distribution()
-    # eda.correlation_matrix()
+    eda.correlation_matrix()
     data['status'].value_counts()
     # Data Preprocessing
     dp = DataPreprocessing(data)

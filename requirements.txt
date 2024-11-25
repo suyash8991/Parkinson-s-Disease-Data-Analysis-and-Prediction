@@ -1,7 +1,8 @@
-pandas
-scikit-learn
-xgboost
-imbalanced-learn
-joblib
-seaborn
+imbalanced_learn==0.10.0
+joblib==1.2.0
+matplotlib==3.9.2
 numpy==1.23.5
+pandas==2.2.3
+scikit_learn==1.2.2
+seaborn==0.13.2
+xgboost==1.7.5

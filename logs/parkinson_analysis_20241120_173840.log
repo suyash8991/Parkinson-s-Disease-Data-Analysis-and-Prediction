@@ -1,0 +1,24 @@
+2024-11-20 17:38:40,189 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2024-11-20 17:38:40,238 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2024-11-20 17:38:40,239 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2024-11-20 17:38:40,240 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2024-11-20 17:38:40,240 - ParkinsonsAnalysis - INFO - Starting correlation_matrix
+2024-11-20 17:40:08,633 - ParkinsonsAnalysis - INFO - Completed correlation_matrix
+2024-11-20 17:40:08,634 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2024-11-20 17:40:08,635 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2024-11-20 17:40:08,636 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2024-11-20 17:40:08,637 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2024-11-20 17:40:08,643 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2024-11-20 17:40:08,643 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2024-11-20 17:40:08,695 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2024-11-20 17:40:08,695 - ParkinsonsAnalysis - INFO - Starting get_data
+2024-11-20 17:40:08,695 - ParkinsonsAnalysis - INFO - Completed get_data
+2024-11-20 17:40:10,923 - ParkinsonsAnalysis - INFO - Able to initialize Model Evaluation
+2024-11-20 17:40:10,923 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-11-20 17:40:10,986 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-11-20 17:40:10,988 - ParkinsonsAnalysis - INFO - Able to initialize Model Evaluation
+2024-11-20 17:40:10,989 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-11-20 17:40:11,019 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-11-20 17:40:11,020 - ParkinsonsAnalysis - INFO - Able to initialize Model Evaluation
+2024-11-20 17:40:11,020 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-11-20 17:40:11,056 - ParkinsonsAnalysis - INFO - Completed evaluate

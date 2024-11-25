@@ -1,15 +1,23 @@
 from sklearn.metrics import classification_report, roc_auc_score, roc_curve
 import matplotlib.pyplot as plt
-
+from config.logger_config import Logger
+from config.logger_config import log_decorator
+import traceback as tb
 class ModelEvaluation:
     def __init__(self, model, X_test, y_test):
         """
         Initialize with trained model, test data, and true labels.
         """
-        self.model = model
-        self.X_test = X_test
-        self.y_test = y_test
+        self.logger = Logger().get_logger()
+        try:
+            self.model = model
+            self.X_test = X_test
+            self.y_test = y_test
+            self.logger.info("Able to initialize Model Evaluation")
+        except e :
+            self.logger.error("Data was not able to initialize Model Evaluation ",tb.format_exc())
 
+    @log_decorator
     def evaluate(self):
         """
         Evaluate the model using different metrics.
@@ -33,6 +41,7 @@ class ModelEvaluation:
             "classification_report": classification_report(self.y_test, y_pred)
         }
 
+    @log_decorator
     def plot_roc_curve(self, y_test, y_pred_proba, roc_auc):
         """
         Plot the ROC curve.
