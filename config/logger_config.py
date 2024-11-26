@@ -4,6 +4,7 @@ import logging
 import os
 from datetime import datetime
 import traceback as tb
+import optuna
 
 class Logger:
     _instance = None
@@ -21,11 +22,12 @@ class Logger:
             if not os.path.exists(logs_dir):
                 os.makedirs(logs_dir)
 
-            # Create log filename with timestamp
+            # Create log filename with timestamp for main logs
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            log_filename = os.path.join(logs_dir, f'parkinson_analysis_{timestamp}.log')
+            # log_filename = os.path.join(logs_dir, f'parkinson_analysis_{timestamp}.log')
+            log_filename = os.path.join(logs_dir, f'parkinson_analysis.log')
 
-            # Configure logging
+            # Configure main logging
             logging.basicConfig(
                 level=logging.INFO,
                 format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -38,6 +40,35 @@ class Logger:
             self.logger = logging.getLogger('ParkinsonsAnalysis')
             Logger._initialized = True
 
+            # Setup Optuna logging in a separate file
+            self._setup_optuna_logging(logs_dir, timestamp)
+
+    def _setup_optuna_logging(self, logs_dir, timestamp):
+        """Setup a separate logger for Optuna that doesn't output to console"""
+        optuna_log_filename = os.path.join(logs_dir, f'optuna_logs.log')
+        
+        # Create a file handler for Optuna logs
+        optuna_file_handler = logging.FileHandler(optuna_log_filename)
+        optuna_file_handler.setLevel(logging.INFO)
+        optuna_file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        
+        # Get Optuna logger and configure it
+        optuna_logger = logging.getLogger("optuna")
+        optuna_logger.setLevel(logging.INFO)
+        
+        # Clear any existing handlers
+        optuna_logger.handlers.clear()
+        
+        # Add only file handler
+        optuna_logger.addHandler(optuna_file_handler)
+        
+        # Prevent propagation to root logger
+        optuna_logger.propagate = False
+        
+        # Disable default Optuna handler and enable our custom logging
+        optuna.logging.disable_default_handler()
+        optuna.logging.set_verbosity(optuna.logging.WARNING)  # Reduce verbosity
+    
     def get_logger(self):
         return self.logger
 

@@ -1,0 +1,51 @@
+Model Comparison Report
+==============================
+
+Model: RANDOMFOREST
+Classification Metrics:
+Precision: 0.9736
+Recall: 0.9665
+F1-Score: 0.9692
+ROC AUC: 0.9873
+
+Best Hyperparameters:
+  n_estimators: 110
+  max_depth: 20
+  min_samples_split: 6
+  min_samples_leaf: 3
+  class_weight: None
+
+==============================
+
+Model: DECISIONTREE
+Classification Metrics:
+Precision: 0.9808
+Recall: 0.9749
+F1-Score: 0.9769
+ROC AUC: 0.9380
+
+Best Hyperparameters:
+  max_depth: 12
+  min_samples_split: 5
+  min_samples_leaf: 1
+  class_weight: balanced
+
+==============================
+
+Model: XGBOOST
+Classification Metrics:
+Precision: 0.9736
+Recall: 0.9665
+F1-Score: 0.9692
+ROC AUC: 0.9891
+
+Best Hyperparameters:
+  n_estimators: 289
+  max_depth: 10
+  learning_rate: 0.019919950856826338
+  subsample: 0.6791260643765352
+  colsample_bytree: 0.9947081275003855
+  scale_pos_weight: 0.8726541280306879
+
+==============================
+
