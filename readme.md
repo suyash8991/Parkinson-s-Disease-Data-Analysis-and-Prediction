@@ -1,4 +1,4 @@
-# Parkinson's Disease Prediction Project
+  # Parkinson's Disease Prediction Project
 
 ## Project Overview
 
@@ -50,15 +50,11 @@ We evaluated three machine learning models:
 - High precision and recall across all models
 - Effective classification of Parkinson's Disease using voice features
 
-## Requirements
-```bash
-pip install -r requirements.txt
-```
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/parkinsons-voice-classification.git
-cd parkinsons-voice-classification
+gh repo clone suyash8991/Parkinson-s-Disease-Data-Analysis-and-Prediction
+cd Parkinson-s-Disease-Data-Analysis-and-Prediction
 pip install -r requirements.txt
 ```
 
