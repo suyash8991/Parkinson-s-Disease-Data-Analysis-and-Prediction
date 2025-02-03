@@ -1,0 +1,18 @@
+Debug Information for xgboost
+==================================================
+
+Test Set Size: 39
+Misclassifications: 9
+Accuracy: 0.7692
+
+Sample of Misclassified Cases:
+     Actual  Predicted
+184       0          1
+163       1          0
+12        1          0
+108       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0

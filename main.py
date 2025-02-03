@@ -6,18 +6,23 @@ from library.eda import ParkinsonEDA
 from library.data_preprocessing import DataPreprocessing
 from library.model_training import ModelTraining
 from library.model_evaluation import ModelEvaluation
+from library.utils import format_confusion_matrix_report
+
 
 def main():
     # Ensure results directory exists
     os.makedirs('results', exist_ok=True)
 
+
+
     # Step 1: Data Loading and EDA
     data_loader = DataLoader()
     data = data_loader.load_csv(DATA)
     
-    eda = ParkinsonEDA(data)
-    eda.summarize_data()
-    eda.check_missing_values()
+    # eda = ParkinsonEDA(data)
+    # eda.ydata_profiling()
+    # eda.summarize_data()
+    # eda.check_missing_values()
     
     # Data Preprocessing
     dp = DataPreprocessing(data)
@@ -30,7 +35,13 @@ def main():
 
     # Save processed data
     processed_data.to_csv('data/processed_parkinsons.csv', index=False)
+    
+    cols_to_drop = [ "status"]
+    target = "status"
 
+    # Drop the name column and extract the "status" column as target
+    X = processed_data.drop(cols_to_drop, axis=1)  
+    y = processed_data[target]  
     print("Training the models...")
     model_trainer = ModelTraining(processed_data)
     trained_models = model_trainer.train_models()
@@ -58,6 +69,16 @@ def main():
             if 'roc_auc' in eval_results:
                 report_file.write(f"ROC AUC: {eval_results['roc_auc']:.4f}\n")
             
+            if 'confusion_matrix' in eval_results:
+                
+                class_labels = ['Negative', 'Positive']  # Modify as per your specific problem
+                
+                cm = eval_results['confusion_matrix']
+                confusion_matrix_report = format_confusion_matrix_report(cm, class_labels)
+                
+                report_file.write("\nConfusion Matrix Details:\n")
+                report_file.write(confusion_matrix_report)
+
             # Best hyperparameters
             report_file.write("\nBest Hyperparameters:\n")
             for param, value in model_data['best_params'].items():
@@ -66,6 +87,16 @@ def main():
             report_file.write("\n" + "=" * 30 + "\n\n")
     
     print("Model training and evaluation complete. Check 'results' directory for detailed reports.")
+
+
+
+
+
+
+
+
+
+    
 
 if __name__ == "__main__":
     main()

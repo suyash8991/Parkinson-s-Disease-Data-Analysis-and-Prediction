@@ -1,0 +1,372 @@
+LazyPredict Model Comparison Report
+========================================
+
+                               Accuracy  Balanced Accuracy  ROC AUC  F1 Score  Time Taken
+Model                                                                                    
+XGBClassifier                      1.00               1.00     1.00      1.00        1.92
+BaggingClassifier                  1.00               1.00     1.00      1.00        0.05
+LabelPropagation                   0.99               0.95     0.95      0.99        0.05
+LabelSpreading                     0.99               0.95     0.95      0.99        0.05
+LinearDiscriminantAnalysis         0.98               0.94     0.94      0.98        0.13
+NearestCentroid                    0.96               0.93     0.93      0.97        0.01
+GaussianNB                         0.96               0.93     0.93      0.97        0.01
+BernoulliNB                        0.96               0.93     0.93      0.96        0.01
+LGBMClassifier                     0.99               0.90     0.90      0.99        0.23
+DecisionTreeClassifier             0.99               0.90     0.90      0.99        0.01
+RandomForestClassifier             0.99               0.90     0.90      0.99        0.16
+ExtraTreesClassifier               0.99               0.90     0.90      0.99        0.10
+AdaBoostClassifier                 0.99               0.90     0.90      0.99        0.18
+KNeighborsClassifier               0.99               0.90     0.90      0.99        0.12
+ExtraTreeClassifier                0.99               0.85     0.85      0.99        0.01
+SVC                                0.99               0.85     0.85      0.99        0.02
+LogisticRegression                 0.98               0.80     0.80      0.98        0.03
+LinearSVC                          0.97               0.80     0.80      0.97        0.02
+QuadraticDiscriminantAnalysis      0.97               0.79     0.79      0.97        0.01
+PassiveAggressiveClassifier        0.98               0.75     0.75      0.98        0.01
+SGDClassifier                      0.97               0.75     0.75      0.97        0.01
+CalibratedClassifierCV             0.97               0.70     0.70      0.97        0.05
+Perceptron                         0.96               0.50     0.50      0.94        0.01
+DummyClassifier                    0.96               0.50     0.50      0.94        0.01
+RidgeClassifier                    0.96               0.50     0.50      0.94        0.01
+RidgeClassifierCV                  0.96               0.50     0.50      0.94        0.09
+
+Detailed Model Predictions:
+
+AdaBoostClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: AdaBoostClassifier, Length: 239, dtype: int64
+BaggingClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: BaggingClassifier, Length: 239, dtype: int64
+BernoulliNB Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: BernoulliNB, Length: 239, dtype: int64
+CalibratedClassifierCV Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: CalibratedClassifierCV, Length: 239, dtype: int64
+DecisionTreeClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: DecisionTreeClassifier, Length: 239, dtype: int64
+DummyClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: DummyClassifier, Length: 239, dtype: int64
+ExtraTreeClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: ExtraTreeClassifier, Length: 239, dtype: int64
+ExtraTreesClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: ExtraTreesClassifier, Length: 239, dtype: int64
+GaussianNB Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: GaussianNB, Length: 239, dtype: int64
+KNeighborsClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: KNeighborsClassifier, Length: 239, dtype: int64
+LabelPropagation Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: LabelPropagation, Length: 239, dtype: int64
+LabelSpreading Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: LabelSpreading, Length: 239, dtype: int64
+LinearDiscriminantAnalysis Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: LinearDiscriminantAnalysis, Length: 239, dtype: int64
+LinearSVC Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: LinearSVC, Length: 239, dtype: int64
+LogisticRegression Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: LogisticRegression, Length: 239, dtype: int64
+NearestCentroid Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: NearestCentroid, Length: 239, dtype: int64
+PassiveAggressiveClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: PassiveAggressiveClassifier, Length: 239, dtype: int64
+Perceptron Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: Perceptron, Length: 239, dtype: int64
+QuadraticDiscriminantAnalysis Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: QuadraticDiscriminantAnalysis, Length: 239, dtype: int64
+RandomForestClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: RandomForestClassifier, Length: 239, dtype: int64
+RidgeClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: RidgeClassifier, Length: 239, dtype: int64
+RidgeClassifierCV Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: RidgeClassifierCV, Length: 239, dtype: int64
+SGDClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: SGDClassifier, Length: 239, dtype: int64
+SVC Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    1
+235    1
+236    1
+237    1
+238    1
+Name: SVC, Length: 239, dtype: int64
+XGBClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: XGBClassifier, Length: 239, dtype: int32
+LGBMClassifier Predictions:
+0      1
+1      1
+2      1
+3      1
+4      1
+      ..
+234    0
+235    1
+236    1
+237    1
+238    1
+Name: LGBMClassifier, Length: 239, dtype: int64

@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 from sklearn.utils import resample
 from config.logger_config import Logger
 from config.logger_config import log_decorator
-
+from ydata_profiling import ProfileReport
+import traceback as tb
 
 class ParkinsonEDA:
 
@@ -19,7 +20,11 @@ class ParkinsonEDA:
             self.data = data
         except e:
             self.logger.error("Error in accessing eda for data")
-            
+    
+    @log_decorator
+    def ydata_profiling(self):
+        profile = ProfileReport(self.data)
+        profile.to_file("./data/profile_report.html")
     @log_decorator
     def summarize_data(self):
         """
@@ -37,9 +42,13 @@ class ParkinsonEDA:
         """
         Check for missing values in the dataset.
         """
-        missing = self.data.isnull().sum()
-        print("Missing Values:")
-        print(missing[missing > 0] if missing.sum() > 0 else "No missing values found.\n")
+        try:
+            missing = self.data.isnull().sum()
+            print("Missing Values:")
+            print(missing[missing > 0] if missing.sum() > 0 else "No missing values found.\n")
+        except:
+            self.logger.error("Missing value error ",tb.format_exc())
+
 
     @log_decorator
     def class_distribution(self):
@@ -58,11 +67,14 @@ class ParkinsonEDA:
         Display a heatmap of the correlation matrix.
         Only numeric columns are considered.
         """
-        numeric_data = self.data.select_dtypes(include=['number'])  # Exclude non-numeric columns
-        corr_matrix = numeric_data.corr()  # Compute correlation matrix
-        plt.figure(figsize=(12, 8))
-        sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
-        plt.title("Correlation Matrix")
-        plt.show()
+        try:
+            numeric_data = self.data.select_dtypes(include=['number'])  # Exclude non-numeric columns
+            corr_matrix = numeric_data.corr()  # Compute correlation matrix
+            plt.figure(figsize=(12, 8))
+            sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
+            plt.title("Correlation Matrix")
+            plt.show()
+        except:
+            self.logger.error("Correlation matrix couldnt be generated ",tb.format_exc())
 
 

@@ -5,7 +5,8 @@ from sklearn.metrics import (
     roc_auc_score, 
     roc_curve,
     precision_recall_curve,
-    average_precision_score
+    average_precision_score,
+    confusion_matrix  
 )
 from config.logger_config import Logger, log_decorator
 import traceback as tb
@@ -54,11 +55,16 @@ class ModelEvaluation:
             except Exception:
                 y_pred_proba = None
             
+            cm = confusion_matrix(self.y_test, y_pred,labels=[1,0])
+
+            
             # Basic metrics
             results = {
                 'classification_report': classification_report(self.y_test, y_pred, output_dict=True),
                 'model_name': self.model_name,
-                'best_hyperparameters': self.best_params
+                'best_hyperparameters': self.best_params,
+                'confusion_matrix': cm.tolist()  # Convert to list for JSON serialization
+
             }
             
             # Advanced metrics and visualizations if probabilistic predictions available
@@ -75,6 +81,7 @@ class ModelEvaluation:
             self.logger.error(tb.format_exc())
             raise
 
+
     def _compute_probability_metrics(self, y_pred_proba):
         """
         Compute probability-based metrics.
@@ -89,8 +96,8 @@ class ModelEvaluation:
         try:
             metrics['roc_auc'] = roc_auc_score(self.y_test, y_pred_proba)
             metrics['average_precision'] = average_precision_score(self.y_test, y_pred_proba)
-        except Exception as e:
-            self.logger.warning(f"Failed to compute probability metrics: {str(e)}")
+        except :
+            self.logger.error("Failed to compute probability metrics: ",tb.format_exc())
         
         return metrics
 

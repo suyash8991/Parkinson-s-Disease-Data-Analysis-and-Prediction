@@ -1,685 +1,2078 @@
-2024-11-26 12:58:40,671 - ParkinsonsAnalysis - INFO - Starting summarize_data
-2024-11-26 12:58:40,716 - ParkinsonsAnalysis - INFO - Completed summarize_data
-2024-11-26 12:58:40,716 - ParkinsonsAnalysis - INFO - Starting check_missing_values
-2024-11-26 12:58:40,717 - ParkinsonsAnalysis - INFO - Completed check_missing_values
-2024-11-26 12:58:40,717 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
-2024-11-26 12:58:40,717 - ParkinsonsAnalysis - INFO - Starting drop_columns
-2024-11-26 12:58:40,717 - ParkinsonsAnalysis - INFO - Completed drop_columns
-2024-11-26 12:58:40,719 - ParkinsonsAnalysis - INFO - Starting standardize_features
-2024-11-26 12:58:40,722 - ParkinsonsAnalysis - INFO - Completed standardize_features
-2024-11-26 12:58:40,722 - ParkinsonsAnalysis - INFO - Starting handle_outliers
-2024-11-26 12:58:40,742 - ParkinsonsAnalysis - INFO - Completed handle_outliers
-2024-11-26 12:58:40,742 - ParkinsonsAnalysis - INFO - Starting get_data
-2024-11-26 12:58:40,743 - ParkinsonsAnalysis - INFO - Completed get_data
-2024-11-26 13:02:17,087 - ParkinsonsAnalysis - INFO - Starting summarize_data
-2024-11-26 13:02:17,139 - ParkinsonsAnalysis - INFO - Completed summarize_data
-2024-11-26 13:02:17,139 - ParkinsonsAnalysis - INFO - Starting check_missing_values
-2024-11-26 13:02:17,140 - ParkinsonsAnalysis - INFO - Completed check_missing_values
-2024-11-26 13:02:17,140 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
-2024-11-26 13:02:17,140 - ParkinsonsAnalysis - INFO - Starting drop_columns
-2024-11-26 13:02:17,141 - ParkinsonsAnalysis - INFO - Completed drop_columns
-2024-11-26 13:02:17,141 - ParkinsonsAnalysis - INFO - Starting standardize_features
-2024-11-26 13:02:17,145 - ParkinsonsAnalysis - INFO - Completed standardize_features
-2024-11-26 13:02:17,145 - ParkinsonsAnalysis - INFO - Starting handle_outliers
-2024-11-26 13:02:17,171 - ParkinsonsAnalysis - INFO - Completed handle_outliers
-2024-11-26 13:02:17,172 - ParkinsonsAnalysis - INFO - Starting get_data
-2024-11-26 13:02:17,172 - ParkinsonsAnalysis - INFO - Completed get_data
-2024-11-26 13:02:17,196 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
-2024-11-26 13:02:17,197 - ParkinsonsAnalysis - INFO - Starting train_models
-2024-11-26 13:02:17,198 - ParkinsonsAnalysis - INFO - Starting optimize_hyperparameters
-2024-11-26 13:02:17,198 - ParkinsonsAnalysis - INFO - Starting split_data
-2024-11-26 13:02:17,202 - ParkinsonsAnalysis - INFO - Training set size: 764 (63.93%)
-2024-11-26 13:02:17,202 - ParkinsonsAnalysis - INFO - Validation set size: 192 (16.07%)
-2024-11-26 13:02:17,202 - ParkinsonsAnalysis - INFO - Test set size: 239 (20.00%)
-2024-11-26 13:02:17,203 - ParkinsonsAnalysis - INFO - Class Distribution:
-2024-11-26 13:02:17,204 - ParkinsonsAnalysis - INFO - Training set:
+2024-12-10 14:51:38,162 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2024-12-10 14:52:56,552 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2024-12-10 14:52:56,552 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2024-12-10 14:52:56,613 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2024-12-10 14:52:56,613 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2024-12-10 14:52:56,614 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2024-12-10 14:52:56,614 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2024-12-10 14:52:56,614 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2024-12-10 14:52:56,615 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2024-12-10 14:52:56,615 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2024-12-10 14:52:56,619 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2024-12-10 14:52:56,619 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2024-12-10 14:52:56,646 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2024-12-10 14:52:56,646 - ParkinsonsAnalysis - INFO - Starting get_data
+2024-12-10 14:52:56,647 - ParkinsonsAnalysis - INFO - Completed get_data
+2024-12-10 14:52:56,676 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2024-12-10 14:52:56,678 - ParkinsonsAnalysis - INFO - Starting train_models
+2024-12-10 14:52:56,680 - ParkinsonsAnalysis - INFO - Starting split_data
+2024-12-10 14:52:56,683 - ParkinsonsAnalysis - INFO - Training set size: 764 (63.93%)
+2024-12-10 14:52:56,683 - ParkinsonsAnalysis - INFO - Validation set size: 192 (16.07%)
+2024-12-10 14:52:56,684 - ParkinsonsAnalysis - INFO - Test set size: 239 (20.00%)
+2024-12-10 14:52:56,684 - ParkinsonsAnalysis - INFO - Class Distribution:
+2024-12-10 14:52:56,685 - ParkinsonsAnalysis - INFO - Training set:
 status
 1    0.960733
 0    0.039267
 Name: proportion, dtype: float64
-2024-11-26 13:02:17,205 - ParkinsonsAnalysis - INFO - Validation set:
+2024-12-10 14:52:56,686 - ParkinsonsAnalysis - INFO - Validation set:
 status
 1    0.958333
 0    0.041667
 Name: proportion, dtype: float64
-2024-11-26 13:02:17,206 - ParkinsonsAnalysis - INFO - Test set:
+2024-12-10 14:52:56,687 - ParkinsonsAnalysis - INFO - Test set:
 status
 1    0.958159
 0    0.041841
 Name: proportion, dtype: float64
-2024-11-26 13:02:17,206 - ParkinsonsAnalysis - INFO - Completed split_data
-2024-11-26 13:02:17,207 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:17,705 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:17,705 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:17,921 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:17,931 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:18,364 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:18,365 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:18,566 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:18,567 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:18,910 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:18,911 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:19,126 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:19,127 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:19,240 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:19,241 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:19,458 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:19,459 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:19,639 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:19,640 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:19,877 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:19,878 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:20,230 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:20,231 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:20,366 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:20,367 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:20,666 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:20,667 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:20,850 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:20,851 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:21,382 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:21,383 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:21,689 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:21,690 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:22,088 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:22,089 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:22,285 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:22,287 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:22,541 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:22,542 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:22,730 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:22,730 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:22,955 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:22,956 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:23,363 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:23,364 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:23,961 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:23,962 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:24,399 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:24,400 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:24,991 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:24,992 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:25,369 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:25,370 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:26,112 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:26,113 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:26,548 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:26,549 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:26,906 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:26,907 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:27,177 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:27,178 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:27,826 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:27,827 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:27,986 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:27,987 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:28,190 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:28,191 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:28,413 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:28,414 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:28,647 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:28,648 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:29,017 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:29,018 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:29,221 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:29,223 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:29,351 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:29,351 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:29,539 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:29,540 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:29,839 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:29,841 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:29,986 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:29,988 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:30,147 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:30,148 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:30,256 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:30,257 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:30,431 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:30,433 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:30,642 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:30,643 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:30,797 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:30,798 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:31,022 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:31,023 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:31,148 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:31,149 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:31,334 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:31,335 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:31,611 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:31,612 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:31,897 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:31,898 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:32,103 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:32,104 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:32,338 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:32,339 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:32,505 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:32,505 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:32,646 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:32,647 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:32,791 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:32,793 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:33,072 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:33,074 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:33,344 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:33,345 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:33,588 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:33,590 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:33,783 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:33,783 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:33,909 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:33,911 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:34,036 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:34,037 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:34,177 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:34,178 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:34,330 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:34,332 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:34,503 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:34,504 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:34,623 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:34,625 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:34,843 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:34,844 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:35,043 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:35,044 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:35,232 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:35,233 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:35,566 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:35,567 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:35,732 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:35,733 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:36,028 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:36,028 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:36,295 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:36,295 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:36,550 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:36,551 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:36,882 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:36,883 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:37,135 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:37,136 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:37,364 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:37,365 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:37,582 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:37,583 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:37,836 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:37,837 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:37,990 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:37,990 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:38,168 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:38,168 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:38,367 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:38,369 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:38,548 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:38,549 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:38,666 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:38,667 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:38,987 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:38,989 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:39,130 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:39,132 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:39,495 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:39,496 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:39,657 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:39,658 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:39,844 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:39,845 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:40,130 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:40,132 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:40,361 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:40,363 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:40,752 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:40,753 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:41,239 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:41,241 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:41,724 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:41,725 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:41,934 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:41,936 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:42,372 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:42,373 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:42,629 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:42,630 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:43,042 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:43,044 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:43,448 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:43,449 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:43,589 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:43,590 - ParkinsonsAnalysis - INFO - Best randomforest trial:
-2024-11-26 13:02:43,591 - ParkinsonsAnalysis - INFO -   Value: 1.0
-2024-11-26 13:02:43,591 - ParkinsonsAnalysis - INFO -   Params: 
-2024-11-26 13:02:43,591 - ParkinsonsAnalysis - INFO -     n_estimators: 110
-2024-11-26 13:02:43,591 - ParkinsonsAnalysis - INFO -     max_depth: 20
-2024-11-26 13:02:43,592 - ParkinsonsAnalysis - INFO -     min_samples_split: 6
-2024-11-26 13:02:43,592 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
-2024-11-26 13:02:43,592 - ParkinsonsAnalysis - INFO -     class_weight: None
-2024-11-26 13:02:43,786 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
-2024-11-26 13:02:43,787 - ParkinsonsAnalysis - INFO - Starting evaluate
-2024-11-26 13:02:44,124 - ParkinsonsAnalysis - INFO - Completed evaluate
-2024-11-26 13:02:44,155 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,177 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,179 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,200 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,201 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,224 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,225 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,247 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,248 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,270 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,271 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,293 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,295 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,316 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,317 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,337 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,338 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,360 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,361 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,385 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,386 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,420 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,421 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,455 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,456 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,491 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,492 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,528 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,529 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,562 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,564 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,600 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,600 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,633 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,635 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,668 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,669 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,713 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,714 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,751 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,753 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,784 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,785 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,819 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,820 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,857 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,858 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,893 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,895 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,929 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,930 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,964 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,965 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:44,997 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:44,998 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,032 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,033 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,068 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,069 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,100 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,101 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,136 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,137 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,171 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,173 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,204 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,205 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,238 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,239 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,273 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,274 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,309 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,310 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,342 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,343 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,375 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,376 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,408 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,409 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,441 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,441 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,475 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,476 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,509 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,510 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,543 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,544 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,578 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,579 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,613 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,614 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,649 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,651 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,683 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,683 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,719 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,722 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,757 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,758 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,795 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,796 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,830 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,831 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,868 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,869 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,904 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,905 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,939 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,941 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:45,977 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:45,979 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,017 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,019 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,054 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,056 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,090 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,091 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,131 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,131 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,170 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,172 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,207 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,207 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,238 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,239 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,273 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,274 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,308 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,309 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,346 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,347 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,380 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,382 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,418 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,419 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,455 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,456 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,488 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,489 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,523 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,524 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,563 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,565 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,597 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,599 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,631 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,633 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,672 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,673 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,708 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,709 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,745 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,745 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,786 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,786 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,820 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,821 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,854 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,855 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,891 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,892 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,929 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,930 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:46,967 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:46,968 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,004 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,005 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,040 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,041 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,077 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,077 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,113 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,114 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,151 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,151 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,186 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,186 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,222 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,224 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,258 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,259 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,294 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,295 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,331 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,332 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,367 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,368 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,406 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,407 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,443 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,445 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,482 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,483 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,520 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,521 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,560 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,561 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,597 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,599 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,637 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,637 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
-2024-11-26 13:02:47,638 - ParkinsonsAnalysis - INFO -   Value: 1.0
-2024-11-26 13:02:47,638 - ParkinsonsAnalysis - INFO -   Params: 
-2024-11-26 13:02:47,638 - ParkinsonsAnalysis - INFO -     max_depth: 12
-2024-11-26 13:02:47,639 - ParkinsonsAnalysis - INFO -     min_samples_split: 5
-2024-11-26 13:02:47,639 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
-2024-11-26 13:02:47,639 - ParkinsonsAnalysis - INFO -     class_weight: balanced
-2024-11-26 13:02:47,666 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
-2024-11-26 13:02:47,666 - ParkinsonsAnalysis - INFO - Starting evaluate
-2024-11-26 13:02:47,867 - ParkinsonsAnalysis - INFO - Completed evaluate
-2024-11-26 13:02:47,870 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:47,972 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:47,973 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,078 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,079 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,253 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,254 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,344 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,345 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,418 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,419 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,516 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,517 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,637 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,637 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,749 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,750 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,832 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,833 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:48,903 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:48,904 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,029 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,030 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,212 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,213 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,351 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,352 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,412 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,413 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,513 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,514 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,642 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,643 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,740 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,741 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,877 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,878 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:49,983 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:49,984 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,103 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,103 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,163 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,164 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,253 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,255 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,344 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,346 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,476 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,478 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,594 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,594 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,677 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,678 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,822 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,823 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:50,938 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:50,939 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,097 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,098 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,197 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,198 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,286 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,286 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,412 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,413 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,550 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,552 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,685 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,686 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,810 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,811 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:51,935 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:51,936 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,080 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,081 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,208 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,208 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,303 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,304 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,437 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,438 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,513 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,514 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,658 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,659 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,817 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,818 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:52,969 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:52,970 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,131 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,132 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,258 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,259 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,362 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,364 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,507 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,508 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,608 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,609 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,765 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,766 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:53,922 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:53,923 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,077 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,078 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,222 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,223 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,412 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,413 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,552 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,553 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,688 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,689 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,823 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,824 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:54,939 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:54,940 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,092 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,093 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,194 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,194 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,314 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,315 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,435 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,436 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,567 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,568 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,679 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,680 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,835 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,836 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:55,956 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:55,957 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,064 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,065 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,174 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,175 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,292 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,293 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,413 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,415 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,551 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,552 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,620 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,621 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,688 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,689 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,769 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,770 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,834 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,835 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:56,917 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:56,918 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,000 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,001 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,129 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,129 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,240 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,241 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,363 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,364 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,443 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,444 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,540 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,541 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,660 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,661 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,822 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,823 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:57,935 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:57,936 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,028 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,029 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,126 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,127 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,287 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,287 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,357 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,358 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,464 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,465 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,559 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,560 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,668 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,669 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,780 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,781 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,884 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,885 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:58,992 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:58,993 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:59,108 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:59,109 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:59,225 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:59,226 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:59,329 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:59,330 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:59,465 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:59,466 - ParkinsonsAnalysis - INFO - Starting _objective
-2024-11-26 13:02:59,550 - ParkinsonsAnalysis - INFO - Completed _objective
-2024-11-26 13:02:59,551 - ParkinsonsAnalysis - INFO - Best xgboost trial:
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -   Value: 1.0
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -   Params: 
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -     n_estimators: 289
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -     max_depth: 10
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -     learning_rate: 0.019919950856826338
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -     subsample: 0.6791260643765352
-2024-11-26 13:02:59,552 - ParkinsonsAnalysis - INFO -     colsample_bytree: 0.9947081275003855
-2024-11-26 13:02:59,553 - ParkinsonsAnalysis - INFO -     scale_pos_weight: 0.8726541280306879
-2024-11-26 13:02:59,709 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
-2024-11-26 13:02:59,709 - ParkinsonsAnalysis - INFO - Starting evaluate
-2024-11-26 13:02:59,926 - ParkinsonsAnalysis - INFO - Completed evaluate
-2024-11-26 13:02:59,932 - ParkinsonsAnalysis - INFO - Completed optimize_hyperparameters
-2024-11-26 13:02:59,933 - ParkinsonsAnalysis - INFO - Completed train_models
+2024-12-10 14:52:56,687 - ParkinsonsAnalysis - INFO - Completed split_data
+2024-12-10 14:53:36,297 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2024-12-10 14:53:36,298 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 14:53:36,298 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 14:53:36,298 - ParkinsonsAnalysis - INFO -     n_estimators: 229
+2024-12-10 14:53:36,299 - ParkinsonsAnalysis - INFO -     max_depth: 19
+2024-12-10 14:53:36,299 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2024-12-10 14:53:36,299 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2024-12-10 14:53:36,299 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2024-12-10 14:53:36,726 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2024-12-10 14:53:36,726 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 14:53:36,975 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 14:53:40,519 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2024-12-10 14:53:40,519 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 14:53:40,520 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 14:53:40,520 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2024-12-10 14:53:40,520 - ParkinsonsAnalysis - INFO -     min_samples_split: 5
+2024-12-10 14:53:40,521 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2024-12-10 14:53:40,521 - ParkinsonsAnalysis - INFO -     class_weight: None
+2024-12-10 14:53:40,543 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2024-12-10 14:53:40,544 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 14:53:40,724 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 14:53:53,325 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2024-12-10 14:53:53,325 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 14:53:53,325 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 14:53:53,325 - ParkinsonsAnalysis - INFO -     n_estimators: 54
+2024-12-10 14:53:53,326 - ParkinsonsAnalysis - INFO -     max_depth: 17
+2024-12-10 14:53:53,326 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1829225924082449
+2024-12-10 14:53:53,326 - ParkinsonsAnalysis - INFO -     subsample: 0.5341958517393988
+2024-12-10 14:53:53,326 - ParkinsonsAnalysis - INFO -     colsample_bytree: 0.65130551895793
+2024-12-10 14:53:53,326 - ParkinsonsAnalysis - INFO -     scale_pos_weight: 1.0086979229977955
+2024-12-10 14:53:53,374 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2024-12-10 14:53:53,375 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 14:53:53,573 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 14:53:53,577 - ParkinsonsAnalysis - INFO - Completed train_models
+2024-12-10 15:04:14,522 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2024-12-10 15:05:47,355 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2024-12-10 15:05:47,355 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2024-12-10 15:05:47,442 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2024-12-10 15:05:47,442 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2024-12-10 15:05:47,444 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2024-12-10 15:05:47,444 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2024-12-10 15:05:47,444 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2024-12-10 15:05:47,446 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2024-12-10 15:05:47,446 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2024-12-10 15:05:47,452 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2024-12-10 15:05:47,452 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2024-12-10 15:05:47,501 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2024-12-10 15:05:47,502 - ParkinsonsAnalysis - INFO - Starting get_data
+2024-12-10 15:05:47,502 - ParkinsonsAnalysis - INFO - Completed get_data
+2024-12-10 15:07:38,931 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2024-12-10 15:08:51,861 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2024-12-10 15:08:51,862 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2024-12-10 15:08:51,922 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2024-12-10 15:08:51,922 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2024-12-10 15:08:51,923 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2024-12-10 15:08:51,924 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2024-12-10 15:08:51,924 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2024-12-10 15:08:51,925 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2024-12-10 15:08:51,925 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2024-12-10 15:08:51,930 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2024-12-10 15:08:51,930 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2024-12-10 15:08:51,958 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2024-12-10 15:08:51,958 - ParkinsonsAnalysis - INFO - Starting get_data
+2024-12-10 15:08:51,959 - ParkinsonsAnalysis - INFO - Completed get_data
+2024-12-10 15:08:51,989 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2024-12-10 15:08:51,989 - ParkinsonsAnalysis - INFO - Starting train_models
+2024-12-10 15:08:51,990 - ParkinsonsAnalysis - INFO - Starting split_data
+2024-12-10 15:08:51,993 - ParkinsonsAnalysis - INFO - Training set size: 764 (63.93%)
+2024-12-10 15:08:51,995 - ParkinsonsAnalysis - INFO - Validation set size: 192 (16.07%)
+2024-12-10 15:08:51,996 - ParkinsonsAnalysis - INFO - Test set size: 239 (20.00%)
+2024-12-10 15:08:51,996 - ParkinsonsAnalysis - INFO - Class Distribution:
+2024-12-10 15:08:51,998 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.960733
+0    0.039267
+Name: proportion, dtype: float64
+2024-12-10 15:08:51,999 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.958333
+0    0.041667
+Name: proportion, dtype: float64
+2024-12-10 15:08:52,000 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.958159
+0    0.041841
+Name: proportion, dtype: float64
+2024-12-10 15:08:52,000 - ParkinsonsAnalysis - INFO - Completed split_data
+2024-12-10 15:09:28,436 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2024-12-10 15:09:28,436 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 15:09:28,436 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 15:09:28,437 - ParkinsonsAnalysis - INFO -     n_estimators: 69
+2024-12-10 15:09:28,437 - ParkinsonsAnalysis - INFO -     max_depth: 20
+2024-12-10 15:09:28,437 - ParkinsonsAnalysis - INFO -     min_samples_split: 10
+2024-12-10 15:09:28,437 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2024-12-10 15:09:28,437 - ParkinsonsAnalysis - INFO -     class_weight: None
+2024-12-10 15:09:28,581 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2024-12-10 15:09:28,581 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 15:09:28,909 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 15:09:32,528 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2024-12-10 15:09:32,529 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 15:09:32,529 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 15:09:32,530 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2024-12-10 15:09:32,530 - ParkinsonsAnalysis - INFO -     min_samples_split: 8
+2024-12-10 15:09:32,530 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2024-12-10 15:09:32,530 - ParkinsonsAnalysis - INFO -     class_weight: None
+2024-12-10 15:09:32,551 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2024-12-10 15:09:32,552 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 15:09:32,739 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 15:09:46,228 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2024-12-10 15:09:46,228 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 15:09:46,228 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 15:09:46,228 - ParkinsonsAnalysis - INFO -     n_estimators: 198
+2024-12-10 15:09:46,228 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2024-12-10 15:09:46,229 - ParkinsonsAnalysis - INFO -     learning_rate: 0.024425824548475923
+2024-12-10 15:09:46,229 - ParkinsonsAnalysis - INFO -     subsample: 0.8250572856564372
+2024-12-10 15:09:46,229 - ParkinsonsAnalysis - INFO -     colsample_bytree: 0.8379832311333332
+2024-12-10 15:09:46,229 - ParkinsonsAnalysis - INFO -     scale_pos_weight: 0.6363185193814376
+2024-12-10 15:09:46,357 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2024-12-10 15:09:46,357 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 15:09:46,555 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 15:09:46,562 - ParkinsonsAnalysis - INFO - Completed train_models
+2024-12-10 15:16:13,452 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2024-12-10 15:17:21,328 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2024-12-10 15:17:21,328 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2024-12-10 15:17:21,379 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2024-12-10 15:17:21,379 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2024-12-10 15:17:21,381 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2024-12-10 15:17:21,381 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2024-12-10 15:17:21,381 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2024-12-10 15:17:21,382 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2024-12-10 15:17:21,382 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2024-12-10 15:17:21,386 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2024-12-10 15:17:21,386 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2024-12-10 15:17:21,414 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2024-12-10 15:17:21,414 - ParkinsonsAnalysis - INFO - Starting get_data
+2024-12-10 15:17:21,414 - ParkinsonsAnalysis - INFO - Completed get_data
+2024-12-10 15:30:34,760 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2024-12-10 15:31:40,773 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2024-12-10 15:31:40,774 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2024-12-10 15:31:40,835 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2024-12-10 15:31:40,836 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2024-12-10 15:31:40,836 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2024-12-10 15:31:40,837 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2024-12-10 15:31:40,837 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2024-12-10 15:31:40,838 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2024-12-10 15:31:40,838 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2024-12-10 15:31:40,843 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2024-12-10 15:31:40,843 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2024-12-10 15:31:40,868 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2024-12-10 15:31:40,869 - ParkinsonsAnalysis - INFO - Starting get_data
+2024-12-10 15:31:40,869 - ParkinsonsAnalysis - INFO - Completed get_data
+2024-12-10 15:31:40,899 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2024-12-10 15:31:40,900 - ParkinsonsAnalysis - INFO - Starting train_models
+2024-12-10 15:31:40,901 - ParkinsonsAnalysis - INFO - Starting split_data
+2024-12-10 15:31:40,905 - ParkinsonsAnalysis - INFO - Training set size: 764 (63.93%)
+2024-12-10 15:31:40,905 - ParkinsonsAnalysis - INFO - Validation set size: 192 (16.07%)
+2024-12-10 15:31:40,905 - ParkinsonsAnalysis - INFO - Test set size: 239 (20.00%)
+2024-12-10 15:31:40,906 - ParkinsonsAnalysis - INFO - Class Distribution:
+2024-12-10 15:31:40,907 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.960733
+0    0.039267
+Name: proportion, dtype: float64
+2024-12-10 15:31:40,908 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.958333
+0    0.041667
+Name: proportion, dtype: float64
+2024-12-10 15:31:40,909 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.958159
+0    0.041841
+Name: proportion, dtype: float64
+2024-12-10 15:31:40,909 - ParkinsonsAnalysis - INFO - Completed split_data
+2024-12-10 15:32:21,920 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2024-12-10 15:32:21,921 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 15:32:21,922 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 15:32:21,922 - ParkinsonsAnalysis - INFO -     n_estimators: 186
+2024-12-10 15:32:21,923 - ParkinsonsAnalysis - INFO -     max_depth: 16
+2024-12-10 15:32:21,923 - ParkinsonsAnalysis - INFO -     min_samples_split: 8
+2024-12-10 15:32:21,923 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2024-12-10 15:32:21,923 - ParkinsonsAnalysis - INFO -     class_weight: None
+2024-12-10 15:32:22,315 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2024-12-10 15:32:22,315 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 15:32:22,573 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 15:32:26,160 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2024-12-10 15:32:26,160 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 15:32:26,161 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 15:32:26,161 - ParkinsonsAnalysis - INFO -     max_depth: 13
+2024-12-10 15:32:26,161 - ParkinsonsAnalysis - INFO -     min_samples_split: 8
+2024-12-10 15:32:26,162 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2024-12-10 15:32:26,163 - ParkinsonsAnalysis - INFO -     class_weight: None
+2024-12-10 15:32:26,184 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2024-12-10 15:32:26,184 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 15:32:26,373 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 15:32:40,314 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2024-12-10 15:32:40,314 - ParkinsonsAnalysis - INFO -   Value: 1.0
+2024-12-10 15:32:40,314 - ParkinsonsAnalysis - INFO -   Params: 
+2024-12-10 15:32:40,314 - ParkinsonsAnalysis - INFO -     n_estimators: 102
+2024-12-10 15:32:40,315 - ParkinsonsAnalysis - INFO -     max_depth: 6
+2024-12-10 15:32:40,315 - ParkinsonsAnalysis - INFO -     learning_rate: 0.0964073325245259
+2024-12-10 15:32:40,315 - ParkinsonsAnalysis - INFO -     subsample: 0.7833366797048354
+2024-12-10 15:32:40,315 - ParkinsonsAnalysis - INFO -     colsample_bytree: 0.7608676728700738
+2024-12-10 15:32:40,315 - ParkinsonsAnalysis - INFO -     scale_pos_weight: 0.5921353672470439
+2024-12-10 15:32:40,388 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2024-12-10 15:32:40,388 - ParkinsonsAnalysis - INFO - Starting evaluate
+2024-12-10 15:32:40,592 - ParkinsonsAnalysis - INFO - Completed evaluate
+2024-12-10 15:32:40,596 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 13:44:42,564 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2025-02-02 13:46:04,831 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2025-02-02 13:46:04,831 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2025-02-02 13:46:04,891 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2025-02-02 13:46:04,892 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2025-02-02 13:46:04,892 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2025-02-02 13:46:04,892 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 13:46:04,893 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 13:46:04,893 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 13:46:04,893 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 13:46:04,897 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 13:46:04,897 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 13:46:04,925 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 13:46:04,925 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 13:46:04,925 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 13:46:04,944 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 13:46:04,944 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 13:46:04,945 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 13:46:04,948 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 13:46:04,948 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 13:46:04,950 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 13:46:04,950 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 13:46:04,951 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 13:46:04,953 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 13:46:04,954 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 13:46:04,954 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 13:46:33,770 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 13:46:33,770 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 13:46:33,771 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 13:46:33,772 - ParkinsonsAnalysis - INFO -     n_estimators: 289
+2025-02-02 13:46:33,772 - ParkinsonsAnalysis - INFO -     max_depth: 11
+2025-02-02 13:46:33,772 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-02 13:46:33,772 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
+2025-02-02 13:46:33,772 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 13:46:34,102 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 13:46:34,104 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 13:46:34,390 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 13:46:37,613 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 13:46:37,613 - ParkinsonsAnalysis - INFO -   Value: 0.7853566958698374
+2025-02-02 13:46:37,614 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 13:46:37,614 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2025-02-02 13:46:37,615 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-02 13:46:37,615 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
+2025-02-02 13:46:37,615 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 13:46:37,634 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 13:46:37,634 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 13:46:37,840 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -   Value: 0.9080100125156445
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -     n_estimators: 257
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -     max_depth: 7
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1433719045328286
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -     subsample: 0.5583484263818622
+2025-02-02 13:46:47,328 - ParkinsonsAnalysis - INFO -     colsample_bytree: 0.5320473938405039
+2025-02-02 13:46:47,330 - ParkinsonsAnalysis - INFO -     scale_pos_weight: 1.4135569758829873
+2025-02-02 13:46:47,400 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 13:46:47,401 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 13:46:47,608 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 13:46:47,616 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 14:16:01,748 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2025-02-02 14:17:12,672 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2025-02-02 14:17:12,674 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2025-02-02 14:17:12,743 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2025-02-02 14:17:12,743 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2025-02-02 14:17:12,745 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2025-02-02 14:17:12,745 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 14:17:12,746 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 14:17:12,746 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 14:17:12,746 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 14:17:12,751 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 14:17:12,752 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 14:17:12,784 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 14:17:12,784 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 14:17:12,785 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 14:17:12,793 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 14:17:12,793 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 14:17:12,796 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 14:17:12,799 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 14:17:12,800 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 14:17:12,800 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 14:17:12,800 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 14:17:12,802 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 14:17:12,802 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 14:17:12,803 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 14:17:12,804 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 14:17:33,636 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 14:17:33,636 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 14:17:33,636 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 14:17:33,637 - ParkinsonsAnalysis - INFO -     n_estimators: 148
+2025-02-02 14:17:33,637 - ParkinsonsAnalysis - INFO -     max_depth: 9
+2025-02-02 14:17:33,637 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-02 14:17:33,637 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-02 14:17:33,637 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 14:17:33,867 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 14:17:33,868 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 14:17:34,161 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 14:17:38,074 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 14:17:38,074 - ParkinsonsAnalysis - INFO -   Value: 0.7853566958698374
+2025-02-02 14:17:38,075 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 14:17:38,075 - ParkinsonsAnalysis - INFO -     max_depth: 5
+2025-02-02 14:17:38,075 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-02 14:17:38,076 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
+2025-02-02 14:17:38,076 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 14:17:38,097 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 14:17:38,097 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 14:17:38,350 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 14:17:47,039 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 14:17:47,039 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 14:17:47,039 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 14:17:47,040 - ParkinsonsAnalysis - INFO -     n_estimators: 146
+2025-02-02 14:17:47,040 - ParkinsonsAnalysis - INFO -     max_depth: 3
+2025-02-02 14:17:47,040 - ParkinsonsAnalysis - INFO -     learning_rate: 0.022604810637234466
+2025-02-02 14:17:47,040 - ParkinsonsAnalysis - INFO -     subsample: 0.5024366916756751
+2025-02-02 14:17:47,115 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 14:17:47,116 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 14:17:47,431 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 14:17:47,435 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 15:02:22,563 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2025-02-02 15:03:07,693 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2025-02-02 15:03:07,693 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2025-02-02 15:03:07,738 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2025-02-02 15:03:07,738 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2025-02-02 15:03:07,739 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2025-02-02 15:03:07,739 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:03:07,741 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:03:07,741 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:03:07,741 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:03:07,745 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:03:07,745 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:03:07,766 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:03:07,766 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:03:07,766 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:05:36,637 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2025-02-02 15:06:21,950 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2025-02-02 15:06:21,950 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2025-02-02 15:06:22,000 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2025-02-02 15:06:22,001 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2025-02-02 15:06:22,002 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2025-02-02 15:06:22,002 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:06:22,003 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:06:22,003 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:06:22,004 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:06:22,007 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:06:22,007 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:06:22,031 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:06:22,032 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:06:22,032 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:07:00,465 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2025-02-02 15:07:46,123 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2025-02-02 15:07:46,123 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2025-02-02 15:07:46,171 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2025-02-02 15:07:46,171 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2025-02-02 15:07:46,172 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2025-02-02 15:07:46,172 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:07:46,172 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:07:46,172 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:07:46,174 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:07:46,177 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:07:46,177 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:07:46,198 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:07:46,199 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:07:46,199 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:08:59,641 - ParkinsonsAnalysis - INFO - Starting ydata_profiling
+2025-02-02 15:09:44,866 - ParkinsonsAnalysis - INFO - Completed ydata_profiling
+2025-02-02 15:09:44,866 - ParkinsonsAnalysis - INFO - Starting summarize_data
+2025-02-02 15:09:44,915 - ParkinsonsAnalysis - INFO - Completed summarize_data
+2025-02-02 15:09:44,915 - ParkinsonsAnalysis - INFO - Starting check_missing_values
+2025-02-02 15:09:44,917 - ParkinsonsAnalysis - INFO - Completed check_missing_values
+2025-02-02 15:09:44,917 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:09:44,917 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:09:44,918 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:09:44,918 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:09:44,921 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:09:44,921 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:09:44,941 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:09:44,942 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:09:44,942 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:11:46,201 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:11:46,202 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:11:46,202 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:11:46,202 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:11:46,205 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:11:46,205 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:11:46,228 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:11:46,229 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:11:46,229 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:11:46,238 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 15:11:46,238 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 15:11:46,238 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 15:11:46,241 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 15:11:46,241 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 15:11:46,241 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 15:11:46,241 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 15:11:46,242 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 15:11:46,243 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 15:11:46,244 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 15:11:46,244 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 15:12:00,598 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 15:12:00,598 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 15:12:00,598 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:12:00,599 - ParkinsonsAnalysis - INFO -     n_estimators: 155
+2025-02-02 15:12:00,599 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-02 15:12:00,599 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-02 15:12:00,599 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-02 15:12:00,599 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 15:12:00,735 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 15:12:00,736 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:12:01,109 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:12:03,615 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 15:12:03,616 - ParkinsonsAnalysis - INFO -   Value: 0.7853566958698374
+2025-02-02 15:12:03,616 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:12:03,616 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-02 15:12:03,616 - ParkinsonsAnalysis - INFO -     min_samples_split: 6
+2025-02-02 15:12:03,616 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
+2025-02-02 15:12:03,618 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 15:12:03,634 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 15:12:03,635 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:12:03,843 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:12:09,622 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 15:12:09,622 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 15:12:09,622 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:12:09,623 - ParkinsonsAnalysis - INFO -     n_estimators: 275
+2025-02-02 15:12:09,623 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2025-02-02 15:12:09,623 - ParkinsonsAnalysis - INFO -     learning_rate: 0.19999948063318967
+2025-02-02 15:12:09,623 - ParkinsonsAnalysis - INFO -     subsample: 0.5028112058261529
+2025-02-02 15:12:09,686 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 15:12:09,686 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:12:09,901 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:12:09,906 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 15:33:09,558 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:33:09,558 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:33:09,558 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:33:09,559 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:33:09,562 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:33:09,562 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:33:09,585 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:33:09,585 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:33:09,585 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:33:09,593 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 15:33:09,593 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 15:33:09,594 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 15:33:09,597 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 15:33:09,597 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 15:33:09,597 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 15:33:09,597 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 15:33:09,599 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 15:33:09,599 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 15:33:09,600 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 15:33:09,600 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 15:33:26,238 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 15:33:26,238 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 15:33:26,238 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:33:26,239 - ParkinsonsAnalysis - INFO -     n_estimators: 216
+2025-02-02 15:33:26,239 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-02 15:33:26,239 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-02 15:33:26,239 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-02 15:33:26,239 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 15:33:26,489 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 15:33:26,489 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:33:26,800 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:33:27,924 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 15:33:27,925 - ParkinsonsAnalysis - INFO -   Value: 0.9375
+2025-02-02 15:33:27,925 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:33:27,925 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-02 15:33:27,925 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-02 15:33:27,926 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 4
+2025-02-02 15:33:27,926 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 15:33:27,939 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 15:33:27,940 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:33:28,241 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:33:33,094 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 15:33:33,094 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 15:33:33,094 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:33:33,094 - ParkinsonsAnalysis - INFO -     n_estimators: 177
+2025-02-02 15:33:33,094 - ParkinsonsAnalysis - INFO -     max_depth: 17
+2025-02-02 15:33:33,094 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1856764153248929
+2025-02-02 15:33:33,095 - ParkinsonsAnalysis - INFO -     subsample: 0.5434767245953127
+2025-02-02 15:33:33,177 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 15:33:33,177 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:33:33,407 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:33:33,411 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 15:37:08,076 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 15:37:08,076 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 15:37:08,077 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 15:37:08,077 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 15:37:08,081 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 15:37:08,082 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 15:37:08,101 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 15:37:08,101 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 15:37:08,102 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 15:37:08,108 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 15:37:08,108 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 15:37:08,110 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 15:37:08,113 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 15:37:08,113 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 15:37:08,113 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 15:37:08,113 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 15:37:08,114 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 15:37:08,115 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 15:37:08,116 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 15:37:08,116 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 15:37:23,478 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 15:37:23,479 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 15:37:23,479 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:37:23,479 - ParkinsonsAnalysis - INFO -     n_estimators: 160
+2025-02-02 15:37:23,479 - ParkinsonsAnalysis - INFO -     max_depth: 17
+2025-02-02 15:37:23,480 - ParkinsonsAnalysis - INFO -     min_samples_split: 6
+2025-02-02 15:37:23,480 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
+2025-02-02 15:37:23,480 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 15:37:23,603 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 15:37:23,604 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:37:23,916 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:37:25,111 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 15:37:25,111 - ParkinsonsAnalysis - INFO -   Value: 0.9396135265700484
+2025-02-02 15:37:25,111 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:37:25,112 - ParkinsonsAnalysis - INFO -     max_depth: 18
+2025-02-02 15:37:25,112 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-02 15:37:25,112 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-02 15:37:25,112 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 15:37:25,115 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 15:37:25,115 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:37:25,327 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:37:29,232 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 15:37:29,232 - ParkinsonsAnalysis - INFO -   Value: 0.9080100125156445
+2025-02-02 15:37:29,232 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 15:37:29,232 - ParkinsonsAnalysis - INFO -     n_estimators: 75
+2025-02-02 15:37:29,233 - ParkinsonsAnalysis - INFO -     max_depth: 13
+2025-02-02 15:37:29,233 - ParkinsonsAnalysis - INFO -     learning_rate: 0.17867807696407234
+2025-02-02 15:37:29,233 - ParkinsonsAnalysis - INFO -     subsample: 0.7523567972428766
+2025-02-02 15:37:29,247 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 15:37:29,247 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 15:37:29,552 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 15:37:29,555 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 16:07:11,707 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 16:07:11,707 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 16:07:11,708 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 16:07:11,708 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 16:07:11,713 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 16:07:11,713 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 16:07:11,744 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 16:07:11,744 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 16:07:11,744 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 16:07:11,751 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 16:07:11,752 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 16:07:11,752 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 16:07:11,758 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 16:07:11,759 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 16:07:11,759 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 16:07:11,759 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 16:07:11,761 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 16:07:11,761 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 16:07:11,762 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 16:07:11,763 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 16:07:29,696 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 16:07:29,696 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 16:07:29,697 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:07:29,697 - ParkinsonsAnalysis - INFO -     n_estimators: 117
+2025-02-02 16:07:29,697 - ParkinsonsAnalysis - INFO -     max_depth: 18
+2025-02-02 16:07:29,697 - ParkinsonsAnalysis - INFO -     min_samples_split: 8
+2025-02-02 16:07:29,698 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-02 16:07:29,698 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 16:07:29,809 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for randomforest
+2025-02-02 16:07:29,809 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:07:29,810 - ParkinsonsAnalysis - ERROR - Failed to initialize Model Evaluation: name 'pd' is not defined
+2025-02-02 16:07:29,810 - ParkinsonsAnalysis - ERROR - Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 34, in __init__
+    self.logger.info(f"Test set class distribution:\n{pd.Series(self.y_test).value_counts()}")
+NameError: name 'pd' is not defined
+
+2025-02-02 16:07:29,829 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 16:08:23,290 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 16:08:23,290 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 16:08:23,291 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 16:08:23,291 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 16:08:23,295 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 16:08:23,295 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 16:08:23,324 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 16:08:23,324 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 16:08:23,324 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 16:08:23,334 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 16:08:23,334 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 16:08:23,335 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 16:08:23,338 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 16:08:23,338 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 16:08:23,338 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 16:08:23,339 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 16:08:23,340 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 16:08:23,342 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 16:08:23,342 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 16:08:23,343 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 16:08:42,682 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 16:08:42,683 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 16:08:42,684 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:08:42,684 - ParkinsonsAnalysis - INFO -     n_estimators: 267
+2025-02-02 16:08:42,684 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-02 16:08:42,685 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-02 16:08:42,685 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-02 16:08:42,685 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 16:08:42,938 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for randomforest
+2025-02-02 16:08:42,939 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:08:42,941 - ParkinsonsAnalysis - INFO - Test set class distribution:
+status
+1    29
+0    10
+Name: count, dtype: int64
+2025-02-02 16:08:42,941 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:08:42,954 - ParkinsonsAnalysis - INFO - 
+Prediction Distribution:
+2025-02-02 16:08:42,954 - ParkinsonsAnalysis - INFO - 1    27
+0    12
+Name: count, dtype: int64
+2025-02-02 16:08:42,957 - ParkinsonsAnalysis - INFO - 
+Number of misclassifications: 8
+2025-02-02 16:08:42,957 - ParkinsonsAnalysis - INFO - 
+Misclassified samples:
+2025-02-02 16:08:42,957 - ParkinsonsAnalysis - INFO -      Actual  Predicted
+184       0          1
+12        1          0
+108       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0
+2025-02-02 16:08:42,982 - ParkinsonsAnalysis - INFO - 
+Probability Distribution Statistics:
+2025-02-02 16:08:42,984 - ParkinsonsAnalysis - INFO - count    39.000000
+mean      0.707849
+std       0.321367
+min       0.014981
+25%       0.425945
+50%       0.872106
+75%       0.976385
+max       1.000000
+dtype: float64
+2025-02-02 16:08:42,986 - ParkinsonsAnalysis - INFO - 
+High confidence errors:
+2025-02-02 16:08:42,987 - ParkinsonsAnalysis - INFO -      Actual  Predicted  Probability
+184       0          1     0.810347
+168       0          1     0.812396
+2025-02-02 16:08:42,994 - ParkinsonsAnalysis - INFO - 
+Confusion Matrix Analysis:
+2025-02-02 16:08:42,994 - ParkinsonsAnalysis - INFO - True Positives: 24
+2025-02-02 16:08:42,994 - ParkinsonsAnalysis - INFO - False Negatives: 5
+2025-02-02 16:08:42,994 - ParkinsonsAnalysis - INFO - False Positives: 3
+2025-02-02 16:08:42,994 - ParkinsonsAnalysis - INFO - True Negatives: 7
+2025-02-02 16:08:42,998 - ParkinsonsAnalysis - ERROR - Failed to compute probability metrics: name 'accuracy_score' is not defined
+2025-02-02 16:08:42,998 - ParkinsonsAnalysis - ERROR - Error during model evaluation: name 'accuracy_score' is not defined
+2025-02-02 16:08:42,999 - ParkinsonsAnalysis - ERROR - Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 124, in evaluate
+    prob_metrics = self._compute_probability_metrics(y_pred_proba)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 167, in _compute_probability_metrics
+    'accuracy': accuracy_score(self.y_test, y_pred_threshold),
+NameError: name 'accuracy_score' is not defined
+
+2025-02-02 16:08:43,000 - ParkinsonsAnalysis - ERROR - Error in evaluate: name 'accuracy_score' is not defined
+Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\config\logger_config.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 124, in evaluate
+    prob_metrics = self._compute_probability_metrics(y_pred_proba)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 167, in _compute_probability_metrics
+    'accuracy': accuracy_score(self.y_test, y_pred_threshold),
+NameError: name 'accuracy_score' is not defined
+
+2025-02-02 16:08:43,009 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 16:11:22,742 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 16:11:22,743 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 16:11:22,743 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 16:11:22,743 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 16:11:22,747 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 16:11:22,747 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 16:11:22,778 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 16:11:22,778 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 16:11:22,779 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 16:11:22,787 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 16:11:22,787 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 16:11:22,788 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 16:11:22,790 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 16:11:22,791 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 16:11:22,791 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 16:11:22,791 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 16:11:22,793 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 16:11:22,793 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 16:11:22,794 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 16:11:22,794 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 16:11:43,617 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -     n_estimators: 186
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -     max_depth: 11
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-02 16:11:43,618 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 16:11:43,797 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for randomforest
+2025-02-02 16:11:43,798 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:11:43,799 - ParkinsonsAnalysis - INFO - Test set class distribution:
+status
+1    29
+0    10
+Name: count, dtype: int64
+2025-02-02 16:11:43,800 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:11:43,808 - ParkinsonsAnalysis - INFO - 
+Prediction Distribution:
+2025-02-02 16:11:43,809 - ParkinsonsAnalysis - INFO - 1    26
+0    13
+Name: count, dtype: int64
+2025-02-02 16:11:43,812 - ParkinsonsAnalysis - INFO - 
+Number of misclassifications: 9
+2025-02-02 16:11:43,812 - ParkinsonsAnalysis - INFO - 
+Misclassified samples:
+2025-02-02 16:11:43,812 - ParkinsonsAnalysis - INFO -      Actual  Predicted
+184       0          1
+12        1          0
+108       1          0
+107       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0
+2025-02-02 16:11:43,832 - ParkinsonsAnalysis - INFO - 
+Probability Distribution Statistics:
+2025-02-02 16:11:43,835 - ParkinsonsAnalysis - INFO - count    39.000000
+mean      0.703198
+std       0.329078
+min       0.000000
+25%       0.456989
+50%       0.854839
+75%       0.991935
+max       1.000000
+dtype: float64
+2025-02-02 16:11:43,837 - ParkinsonsAnalysis - INFO - 
+High confidence errors:
+2025-02-02 16:11:43,837 - ParkinsonsAnalysis - INFO -      Actual  Predicted  Probability
+168       0          1     0.854839
+2025-02-02 16:11:43,842 - ParkinsonsAnalysis - INFO - 
+Confusion Matrix Analysis:
+2025-02-02 16:11:43,842 - ParkinsonsAnalysis - INFO - True Positives: 23
+2025-02-02 16:11:43,842 - ParkinsonsAnalysis - INFO - False Negatives: 6
+2025-02-02 16:11:43,842 - ParkinsonsAnalysis - INFO - False Positives: 3
+2025-02-02 16:11:43,842 - ParkinsonsAnalysis - INFO - True Negatives: 7
+2025-02-02 16:11:43,849 - ParkinsonsAnalysis - ERROR - Failed to compute probability metrics: name 'precision_score' is not defined
+2025-02-02 16:11:43,849 - ParkinsonsAnalysis - ERROR - Error during model evaluation: name 'precision_score' is not defined
+2025-02-02 16:11:43,850 - ParkinsonsAnalysis - ERROR - Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 125, in evaluate
+    prob_metrics = self._compute_probability_metrics(y_pred_proba)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 169, in _compute_probability_metrics
+    'precision': precision_score(self.y_test, y_pred_threshold),
+NameError: name 'precision_score' is not defined
+
+2025-02-02 16:11:43,851 - ParkinsonsAnalysis - ERROR - Error in evaluate: name 'precision_score' is not defined
+Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\config\logger_config.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 125, in evaluate
+    prob_metrics = self._compute_probability_metrics(y_pred_proba)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 169, in _compute_probability_metrics
+    'precision': precision_score(self.y_test, y_pred_threshold),
+NameError: name 'precision_score' is not defined
+
+2025-02-02 16:11:43,857 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 16:12:38,547 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 16:12:38,547 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 16:12:38,547 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 16:12:38,548 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 16:12:38,552 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 16:12:38,552 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 16:12:38,583 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 16:12:38,585 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 16:12:38,585 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 16:12:38,593 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 16:12:38,593 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 16:12:38,594 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 16:12:38,596 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 16:12:38,597 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 16:12:38,597 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 16:12:38,597 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 16:12:38,599 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 16:12:38,599 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 16:12:38,601 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 16:12:38,601 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 16:12:57,642 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 16:12:57,643 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 16:12:57,644 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:12:57,644 - ParkinsonsAnalysis - INFO -     n_estimators: 111
+2025-02-02 16:12:57,644 - ParkinsonsAnalysis - INFO -     max_depth: 17
+2025-02-02 16:12:57,644 - ParkinsonsAnalysis - INFO -     min_samples_split: 5
+2025-02-02 16:12:57,644 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-02 16:12:57,644 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 16:12:57,756 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for randomforest
+2025-02-02 16:12:57,756 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:12:57,757 - ParkinsonsAnalysis - INFO - Test set class distribution:
+status
+1    29
+0    10
+Name: count, dtype: int64
+2025-02-02 16:12:57,758 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:12:57,765 - ParkinsonsAnalysis - INFO - 
+Prediction Distribution:
+2025-02-02 16:12:57,765 - ParkinsonsAnalysis - INFO - 1    26
+0    13
+Name: count, dtype: int64
+2025-02-02 16:12:57,767 - ParkinsonsAnalysis - INFO - 
+Number of misclassifications: 9
+2025-02-02 16:12:57,767 - ParkinsonsAnalysis - INFO - 
+Misclassified samples:
+2025-02-02 16:12:57,767 - ParkinsonsAnalysis - INFO -      Actual  Predicted
+184       0          1
+12        1          0
+108       1          0
+107       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0
+2025-02-02 16:12:57,783 - ParkinsonsAnalysis - INFO - 
+Probability Distribution Statistics:
+2025-02-02 16:12:57,785 - ParkinsonsAnalysis - INFO - count    39.000000
+mean      0.684756
+std       0.328273
+min       0.022377
+25%       0.438338
+50%       0.827266
+75%       0.962847
+max       1.000000
+dtype: float64
+2025-02-02 16:12:57,787 - ParkinsonsAnalysis - INFO - 
+High confidence errors:
+2025-02-02 16:12:57,787 - ParkinsonsAnalysis - INFO -      Actual  Predicted  Probability
+184       0          1     0.829832
+2025-02-02 16:12:57,793 - ParkinsonsAnalysis - INFO - 
+Confusion Matrix Analysis:
+2025-02-02 16:12:57,794 - ParkinsonsAnalysis - INFO - True Positives: 23
+2025-02-02 16:12:57,794 - ParkinsonsAnalysis - INFO - False Negatives: 6
+2025-02-02 16:12:57,794 - ParkinsonsAnalysis - INFO - False Positives: 3
+2025-02-02 16:12:57,794 - ParkinsonsAnalysis - INFO - True Negatives: 7
+2025-02-02 16:12:57,819 - ParkinsonsAnalysis - ERROR - Error during model evaluation: 'ModelEvaluation' object has no attribute '_generate_visualizations'
+2025-02-02 16:12:57,820 - ParkinsonsAnalysis - ERROR - Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 131, in evaluate
+    visual_data = self._generate_visualizations(y_pred_proba)
+AttributeError: 'ModelEvaluation' object has no attribute '_generate_visualizations'
+
+2025-02-02 16:12:57,821 - ParkinsonsAnalysis - ERROR - Error in evaluate: 'ModelEvaluation' object has no attribute '_generate_visualizations'
+Traceback (most recent call last):
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\config\logger_config.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Coding\Projects\osu_eecs_chatbot\suyash\Parkinson Project\library\model_evaluation.py", line 131, in evaluate
+    visual_data = self._generate_visualizations(y_pred_proba)
+AttributeError: 'ModelEvaluation' object has no attribute '_generate_visualizations'
+
+2025-02-02 16:12:57,827 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 16:14:59,526 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 16:14:59,527 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 16:14:59,527 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 16:14:59,527 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 16:14:59,531 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 16:14:59,531 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 16:14:59,563 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 16:14:59,563 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 16:14:59,563 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 16:14:59,572 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 16:14:59,572 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 16:14:59,573 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 16:14:59,575 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 16:14:59,576 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 16:14:59,576 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 16:14:59,576 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 16:14:59,577 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 16:14:59,578 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 16:14:59,580 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 16:14:59,580 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 16:15:19,379 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 16:15:19,379 - ParkinsonsAnalysis - INFO -   Value: 0.8508771929824562
+2025-02-02 16:15:19,380 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:15:19,380 - ParkinsonsAnalysis - INFO -     n_estimators: 227
+2025-02-02 16:15:19,380 - ParkinsonsAnalysis - INFO -     max_depth: 8
+2025-02-02 16:15:19,380 - ParkinsonsAnalysis - INFO -     min_samples_split: 7
+2025-02-02 16:15:19,380 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-02 16:15:19,382 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 16:15:19,584 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for randomforest
+2025-02-02 16:15:19,585 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:15:19,586 - ParkinsonsAnalysis - INFO - Test set class distribution:
+status
+1    29
+0    10
+Name: count, dtype: int64
+2025-02-02 16:15:19,587 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:15:19,601 - ParkinsonsAnalysis - INFO - 
+Prediction Distribution:
+2025-02-02 16:15:19,602 - ParkinsonsAnalysis - INFO - 1    26
+0    13
+Name: count, dtype: int64
+2025-02-02 16:15:19,603 - ParkinsonsAnalysis - INFO - 
+Number of misclassifications: 9
+2025-02-02 16:15:19,603 - ParkinsonsAnalysis - INFO - 
+Misclassified samples:
+2025-02-02 16:15:19,603 - ParkinsonsAnalysis - INFO -      Actual  Predicted
+184       0          1
+12        1          0
+108       1          0
+107       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0
+2025-02-02 16:15:19,623 - ParkinsonsAnalysis - INFO - 
+Probability Distribution Statistics:
+2025-02-02 16:15:19,624 - ParkinsonsAnalysis - INFO - count    39.000000
+mean      0.662722
+std       0.342244
+min       0.011791
+25%       0.365654
+50%       0.801156
+75%       0.963890
+max       1.000000
+dtype: float64
+2025-02-02 16:15:19,626 - ParkinsonsAnalysis - INFO - 
+Confusion Matrix Analysis:
+2025-02-02 16:15:19,626 - ParkinsonsAnalysis - INFO - True Positives: 23
+2025-02-02 16:15:19,626 - ParkinsonsAnalysis - INFO - False Negatives: 6
+2025-02-02 16:15:19,626 - ParkinsonsAnalysis - INFO - False Positives: 3
+2025-02-02 16:15:19,626 - ParkinsonsAnalysis - INFO - True Negatives: 7
+2025-02-02 16:15:19,650 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 16:15:21,269 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 16:15:21,269 - ParkinsonsAnalysis - INFO -   Value: 0.9375
+2025-02-02 16:15:21,269 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:15:21,269 - ParkinsonsAnalysis - INFO -     max_depth: 13
+2025-02-02 16:15:21,270 - ParkinsonsAnalysis - INFO -     min_samples_split: 8
+2025-02-02 16:15:21,270 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 4
+2025-02-02 16:15:21,270 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 16:15:21,272 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for decisiontree
+2025-02-02 16:15:21,272 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:15:21,273 - ParkinsonsAnalysis - INFO - Test set class distribution:
+status
+1    29
+0    10
+Name: count, dtype: int64
+2025-02-02 16:15:21,273 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:15:21,274 - ParkinsonsAnalysis - INFO - 
+Prediction Distribution:
+2025-02-02 16:15:21,274 - ParkinsonsAnalysis - INFO - 1    25
+0    14
+Name: count, dtype: int64
+2025-02-02 16:15:21,276 - ParkinsonsAnalysis - INFO - 
+Number of misclassifications: 10
+2025-02-02 16:15:21,276 - ParkinsonsAnalysis - INFO - 
+Misclassified samples:
+2025-02-02 16:15:21,277 - ParkinsonsAnalysis - INFO -      Actual  Predicted
+192       0          1
+163       1          0
+12        1          0
+108       1          0
+107       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0
+2025-02-02 16:15:21,284 - ParkinsonsAnalysis - INFO - 
+Probability Distribution Statistics:
+2025-02-02 16:15:21,285 - ParkinsonsAnalysis - INFO - count    39.000000
+mean      0.635348
+std       0.465683
+min       0.000000
+25%       0.000000
+50%       1.000000
+75%       1.000000
+max       1.000000
+dtype: float64
+2025-02-02 16:15:21,287 - ParkinsonsAnalysis - INFO - 
+High confidence errors:
+2025-02-02 16:15:21,287 - ParkinsonsAnalysis - INFO -      Actual  Predicted  Probability
+163       1          0     0.142857
+12        1          0     0.000000
+108       1          0     0.000000
+107       1          0     0.000000
+114       1          0     0.000000
+168       0          1     1.000000
+48        0          1     1.000000
+106       1          0     0.000000
+40        1          0     0.000000
+2025-02-02 16:15:21,294 - ParkinsonsAnalysis - INFO - 
+Confusion Matrix Analysis:
+2025-02-02 16:15:21,294 - ParkinsonsAnalysis - INFO - True Positives: 22
+2025-02-02 16:15:21,295 - ParkinsonsAnalysis - INFO - False Negatives: 7
+2025-02-02 16:15:21,295 - ParkinsonsAnalysis - INFO - False Positives: 3
+2025-02-02 16:15:21,295 - ParkinsonsAnalysis - INFO - True Negatives: 7
+2025-02-02 16:15:21,321 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 16:15:27,828 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 16:15:27,829 - ParkinsonsAnalysis - INFO -   Value: 0.875
+2025-02-02 16:15:27,829 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:15:27,829 - ParkinsonsAnalysis - INFO -     n_estimators: 229
+2025-02-02 16:15:27,829 - ParkinsonsAnalysis - INFO -     max_depth: 4
+2025-02-02 16:15:27,829 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1251263955036832
+2025-02-02 16:15:27,829 - ParkinsonsAnalysis - INFO -     subsample: 0.6540717285129308
+2025-02-02 16:15:27,879 - ParkinsonsAnalysis - INFO - Model Evaluation initialized for xgboost
+2025-02-02 16:15:27,880 - ParkinsonsAnalysis - INFO - Test set shape: X=(39, 22), y=(39,)
+2025-02-02 16:15:27,881 - ParkinsonsAnalysis - INFO - Test set class distribution:
+status
+1    29
+0    10
+Name: count, dtype: int64
+2025-02-02 16:15:27,881 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:15:27,884 - ParkinsonsAnalysis - INFO - 
+Prediction Distribution:
+2025-02-02 16:15:27,892 - ParkinsonsAnalysis - INFO - 1    26
+0    13
+Name: count, dtype: int64
+2025-02-02 16:15:27,893 - ParkinsonsAnalysis - INFO - 
+Number of misclassifications: 9
+2025-02-02 16:15:27,894 - ParkinsonsAnalysis - INFO - 
+Misclassified samples:
+2025-02-02 16:15:27,894 - ParkinsonsAnalysis - INFO -      Actual  Predicted
+184       0          1
+163       1          0
+12        1          0
+108       1          0
+114       1          0
+168       0          1
+48        0          1
+106       1          0
+40        1          0
+2025-02-02 16:15:27,902 - ParkinsonsAnalysis - INFO - 
+Probability Distribution Statistics:
+2025-02-02 16:15:27,903 - ParkinsonsAnalysis - INFO - count    39.000000
+mean      0.698423
+std       0.419143
+min       0.006251
+25%       0.150573
+50%       0.974174
+75%       0.995348
+max       0.999082
+dtype: float64
+2025-02-02 16:15:27,905 - ParkinsonsAnalysis - INFO - 
+High confidence errors:
+2025-02-02 16:15:27,905 - ParkinsonsAnalysis - INFO -      Actual  Predicted  Probability
+184       0          1     0.925253
+12        1          0     0.124470
+108       1          0     0.126444
+114       1          0     0.163886
+168       0          1     0.974174
+48        0          1     0.962564
+106       1          0     0.048745
+2025-02-02 16:15:27,911 - ParkinsonsAnalysis - INFO - 
+Confusion Matrix Analysis:
+2025-02-02 16:15:27,912 - ParkinsonsAnalysis - INFO - True Positives: 23
+2025-02-02 16:15:27,912 - ParkinsonsAnalysis - INFO - False Negatives: 6
+2025-02-02 16:15:27,912 - ParkinsonsAnalysis - INFO - False Positives: 3
+2025-02-02 16:15:27,912 - ParkinsonsAnalysis - INFO - True Negatives: 7
+2025-02-02 16:15:27,940 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 16:15:27,945 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 16:56:26,603 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 16:56:26,604 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 16:56:26,604 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 16:56:26,604 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 16:56:26,608 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 16:56:26,609 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 16:56:26,638 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 16:56:26,638 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 16:56:26,640 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 16:56:26,648 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 16:56:26,649 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 16:56:26,649 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 16:56:26,651 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 16:56:26,652 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 16:56:26,652 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 16:56:26,652 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 16:56:26,653 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 16:56:26,654 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 16:56:26,655 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 16:56:26,655 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 16:56:41,398 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 16:56:41,399 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 16:56:41,399 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:56:41,399 - ParkinsonsAnalysis - INFO -     n_estimators: 50
+2025-02-02 16:56:41,399 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-02 16:56:41,400 - ParkinsonsAnalysis - INFO -     min_samples_split: 6
+2025-02-02 16:56:41,400 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-02 16:56:41,400 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 16:56:41,463 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 16:56:41,464 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:56:41,830 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 16:56:43,554 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 16:56:43,555 - ParkinsonsAnalysis - INFO -   Value: 0.9375
+2025-02-02 16:56:43,555 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:56:43,555 - ParkinsonsAnalysis - INFO -     max_depth: 9
+2025-02-02 16:56:43,555 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-02 16:56:43,556 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 4
+2025-02-02 16:56:43,556 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 16:56:43,558 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 16:56:43,558 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:56:43,857 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 16:56:54,718 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 16:56:54,718 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 16:56:54,719 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 16:56:54,719 - ParkinsonsAnalysis - INFO -     n_estimators: 244
+2025-02-02 16:56:54,719 - ParkinsonsAnalysis - INFO -     max_depth: 13
+2025-02-02 16:56:54,719 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1999535168667791
+2025-02-02 16:56:54,720 - ParkinsonsAnalysis - INFO -     subsample: 0.5432197654477667
+2025-02-02 16:56:54,807 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 16:56:54,808 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 16:56:55,255 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 16:56:55,261 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-02 17:03:39,233 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-02 17:03:39,234 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-02 17:03:39,234 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-02 17:03:39,234 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-02 17:03:39,238 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-02 17:03:39,238 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-02 17:03:39,269 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-02 17:03:39,270 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-02 17:03:39,270 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-02 17:03:39,277 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-02 17:03:39,278 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-02 17:03:39,278 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-02 17:03:39,281 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-02 17:03:39,281 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-02 17:03:39,282 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-02 17:03:39,282 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-02 17:03:39,283 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-02 17:03:39,285 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-02 17:03:39,286 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-02 17:03:39,286 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-02 17:07:39,150 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-02 17:07:39,151 - ParkinsonsAnalysis - INFO -   Value: 0.8792270531400965
+2025-02-02 17:07:39,151 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 17:07:39,152 - ParkinsonsAnalysis - INFO -     n_estimators: 53
+2025-02-02 17:07:39,152 - ParkinsonsAnalysis - INFO -     max_depth: 12
+2025-02-02 17:07:39,152 - ParkinsonsAnalysis - INFO -     min_samples_split: 6
+2025-02-02 17:07:39,152 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-02 17:07:39,152 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-02 17:07:39,206 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-02 17:07:39,206 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 17:07:39,570 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 17:08:08,197 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-02 17:08:08,197 - ParkinsonsAnalysis - INFO -   Value: 0.9396135265700484
+2025-02-02 17:08:08,197 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 17:08:08,198 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2025-02-02 17:08:08,198 - ParkinsonsAnalysis - INFO -     min_samples_split: 5
+2025-02-02 17:08:08,198 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-02 17:08:08,198 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-02 17:08:08,202 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-02 17:08:08,202 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 17:08:08,462 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 17:09:22,569 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-02 17:09:22,570 - ParkinsonsAnalysis - INFO -   Value: 0.9080100125156445
+2025-02-02 17:09:22,570 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-02 17:09:22,570 - ParkinsonsAnalysis - INFO -     n_estimators: 91
+2025-02-02 17:09:22,570 - ParkinsonsAnalysis - INFO -     max_depth: 11
+2025-02-02 17:09:22,570 - ParkinsonsAnalysis - INFO -     learning_rate: 0.16525642492798553
+2025-02-02 17:09:22,570 - ParkinsonsAnalysis - INFO -     subsample: 0.7330716477823548
+2025-02-02 17:09:22,591 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-02 17:09:22,591 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-02 17:09:22,843 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-02 17:09:22,849 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 01:46:41,565 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 01:46:41,566 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 01:46:41,567 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 01:46:41,567 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 01:46:41,570 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 01:46:41,570 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 01:46:41,604 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 01:46:41,604 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 01:46:41,604 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 01:46:41,613 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 01:46:41,613 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 01:46:41,613 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 01:46:41,618 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-03 01:46:41,618 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-03 01:46:41,618 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 01:46:41,619 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 01:46:41,620 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-03 01:46:41,621 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-03 01:46:41,622 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 01:46:41,622 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 01:47:15,016 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 01:47:15,016 - ParkinsonsAnalysis - INFO -   Value: 0.9130434782608695
+2025-02-03 01:47:15,016 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:47:15,016 - ParkinsonsAnalysis - INFO -     n_estimators: 250
+2025-02-03 01:47:15,018 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-03 01:47:15,018 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 01:47:15,018 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 01:47:15,251 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 01:47:15,251 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:47:15,621 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:47:18,162 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 01:47:18,163 - ParkinsonsAnalysis - INFO -   Value: 0.9361702127659574
+2025-02-03 01:47:18,164 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:47:18,164 - ParkinsonsAnalysis - INFO -     max_depth: 5
+2025-02-03 01:47:18,164 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 01:47:18,164 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 01:47:18,167 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 01:47:18,168 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:47:18,509 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:47:32,842 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 01:47:32,842 - ParkinsonsAnalysis - INFO -   Value: 0.8936170212765957
+2025-02-03 01:47:32,842 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:47:32,843 - ParkinsonsAnalysis - INFO -     n_estimators: 217
+2025-02-03 01:47:32,843 - ParkinsonsAnalysis - INFO -     max_depth: 13
+2025-02-03 01:47:32,843 - ParkinsonsAnalysis - INFO -     learning_rate: 0.169230094813896
+2025-02-03 01:47:32,888 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 01:47:32,889 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:47:33,146 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:47:33,151 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 01:50:25,682 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 01:50:25,682 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 01:50:25,683 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 01:50:25,683 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 01:50:25,688 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 01:50:25,688 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 01:50:25,766 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 01:50:25,766 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 01:50:25,766 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 01:50:25,773 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 01:50:25,774 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 01:50:25,774 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 01:50:25,777 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-03 01:50:25,777 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-03 01:50:25,777 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 01:50:25,777 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 01:50:25,780 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-03 01:50:25,780 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-03 01:50:25,781 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 01:50:25,781 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 01:51:14,937 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 01:51:14,937 - ParkinsonsAnalysis - INFO -   Value: 0.9130434782608695
+2025-02-03 01:51:14,937 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:51:14,937 - ParkinsonsAnalysis - INFO -     n_estimators: 285
+2025-02-03 01:51:14,937 - ParkinsonsAnalysis - INFO -     max_depth: 6
+2025-02-03 01:51:14,938 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 01:51:14,938 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 01:51:15,226 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 01:51:15,227 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:51:15,668 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:51:18,297 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 01:51:18,297 - ParkinsonsAnalysis - INFO -   Value: 0.9361702127659574
+2025-02-03 01:51:18,297 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:51:18,298 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-03 01:51:18,298 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-03 01:51:18,298 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 01:51:18,300 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 01:51:18,300 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:51:18,550 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:51:30,291 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 01:51:30,291 - ParkinsonsAnalysis - INFO -   Value: 0.8936170212765957
+2025-02-03 01:51:30,292 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:51:30,292 - ParkinsonsAnalysis - INFO -     n_estimators: 154
+2025-02-03 01:51:30,292 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-03 01:51:30,292 - ParkinsonsAnalysis - INFO -     learning_rate: 0.18547027653758802
+2025-02-03 01:51:30,332 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 01:51:30,332 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:51:30,587 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:51:30,592 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 01:55:11,333 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 01:55:11,333 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 01:55:11,333 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 01:55:11,334 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 01:55:11,337 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 01:55:11,338 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 01:55:11,368 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 01:55:11,369 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 01:55:11,369 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 01:55:11,376 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 01:55:11,377 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 01:55:11,377 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 01:55:11,380 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-03 01:55:11,381 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-03 01:55:11,381 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 01:55:11,381 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 01:55:11,382 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-03 01:55:11,384 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-03 01:55:11,384 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 01:55:11,385 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 01:55:52,497 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 01:55:52,498 - ParkinsonsAnalysis - INFO -   Value: 0.875
+2025-02-03 01:55:52,498 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:55:52,498 - ParkinsonsAnalysis - INFO -     n_estimators: 161
+2025-02-03 01:55:52,498 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-03 01:55:52,498 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 01:55:52,498 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 01:55:52,663 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 01:55:52,663 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:55:53,002 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:55:55,606 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 01:55:55,607 - ParkinsonsAnalysis - INFO -   Value: 0.90625
+2025-02-03 01:55:55,607 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:55:55,608 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2025-02-03 01:55:55,608 - ParkinsonsAnalysis - INFO -     min_samples_split: 5
+2025-02-03 01:55:55,608 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 01:55:55,610 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 01:55:55,610 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:55:55,964 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:56:05,004 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 01:56:05,005 - ParkinsonsAnalysis - INFO -   Value: 0.8125
+2025-02-03 01:56:05,005 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 01:56:05,005 - ParkinsonsAnalysis - INFO -     n_estimators: 57
+2025-02-03 01:56:05,005 - ParkinsonsAnalysis - INFO -     max_depth: 16
+2025-02-03 01:56:05,005 - ParkinsonsAnalysis - INFO -     learning_rate: 0.015262355684394671
+2025-02-03 01:56:05,021 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 01:56:05,022 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 01:56:05,281 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 01:56:05,286 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 01:59:34,520 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 01:59:34,521 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 01:59:34,521 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 01:59:34,522 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 01:59:34,525 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 01:59:34,525 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 01:59:34,559 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 01:59:34,559 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 01:59:34,559 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 01:59:34,568 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 01:59:34,569 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 01:59:34,569 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 01:59:34,572 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-03 01:59:34,573 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-03 01:59:34,573 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 01:59:34,573 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 01:59:34,574 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-03 01:59:34,576 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-03 01:59:34,577 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 01:59:34,577 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 02:00:01,300 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 02:00:01,300 - ParkinsonsAnalysis - INFO -   Value: 0.875
+2025-02-03 02:00:01,300 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:00:01,300 - ParkinsonsAnalysis - INFO -     n_estimators: 100
+2025-02-03 02:00:01,302 - ParkinsonsAnalysis - INFO -     max_depth: 7
+2025-02-03 02:00:01,302 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 02:00:01,302 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 02:00:01,400 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 02:00:01,401 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:00:01,719 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:00:04,297 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 02:00:04,297 - ParkinsonsAnalysis - INFO -   Value: 0.9166666666666666
+2025-02-03 02:00:04,297 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:00:04,297 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2025-02-03 02:00:04,297 - ParkinsonsAnalysis - INFO -     min_samples_split: 5
+2025-02-03 02:00:04,297 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 02:00:04,300 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 02:00:04,300 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:00:04,574 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:00:15,583 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 02:00:15,584 - ParkinsonsAnalysis - INFO -   Value: 0.875
+2025-02-03 02:00:15,584 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:00:15,584 - ParkinsonsAnalysis - INFO -     n_estimators: 199
+2025-02-03 02:00:15,584 - ParkinsonsAnalysis - INFO -     max_depth: 9
+2025-02-03 02:00:15,584 - ParkinsonsAnalysis - INFO -     learning_rate: 0.19943393436250323
+2025-02-03 02:00:15,630 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 02:00:15,630 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:00:15,989 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:00:15,993 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 02:12:58,214 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 02:12:58,214 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 02:12:58,216 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 02:12:58,216 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 02:12:58,219 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 02:12:58,219 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 02:12:58,253 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 02:12:58,253 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 02:12:58,253 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 02:12:58,261 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 02:12:58,262 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 02:12:58,263 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 02:12:58,265 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-03 02:12:58,266 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-03 02:12:58,266 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 02:12:58,266 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 02:12:58,269 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-03 02:12:58,270 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-03 02:12:58,271 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 02:12:58,271 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 02:13:32,615 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 02:15:02,346 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 02:15:02,346 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 02:15:02,346 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 02:15:02,347 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 02:15:02,350 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 02:15:02,351 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 02:15:02,380 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 02:15:02,380 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 02:15:02,380 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 02:15:02,390 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 02:15:02,390 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 02:15:02,390 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 02:15:02,393 - ParkinsonsAnalysis - INFO - Training set size: 124 (63.59%)
+2025-02-03 02:15:02,393 - ParkinsonsAnalysis - INFO - Validation set size: 32 (16.41%)
+2025-02-03 02:15:02,394 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 02:15:02,394 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 02:15:02,395 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.758065
+0    0.241935
+Name: proportion, dtype: float64
+2025-02-03 02:15:02,397 - ParkinsonsAnalysis - INFO - Validation set:
+status
+1    0.75
+0    0.25
+Name: proportion, dtype: float64
+2025-02-03 02:15:02,398 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 02:15:02,398 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 02:17:10,993 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 02:17:10,993 - ParkinsonsAnalysis - INFO -   Value: 0.9106666666666665
+2025-02-03 02:17:10,993 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:17:10,994 - ParkinsonsAnalysis - INFO -     n_estimators: 73
+2025-02-03 02:17:10,994 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-03 02:17:10,994 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 02:17:10,995 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 02:17:11,077 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 02:17:11,078 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:17:11,487 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:17:16,907 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 02:17:16,907 - ParkinsonsAnalysis - INFO -   Value: 0.8703333333333333
+2025-02-03 02:17:16,907 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:17:16,907 - ParkinsonsAnalysis - INFO -     max_depth: 8
+2025-02-03 02:17:16,907 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 02:17:16,907 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 02:17:16,909 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 02:17:16,909 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:17:17,158 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:17:54,274 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 02:17:54,274 - ParkinsonsAnalysis - INFO -   Value: 0.9189999999999999
+2025-02-03 02:17:54,274 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:17:54,275 - ParkinsonsAnalysis - INFO -     n_estimators: 178
+2025-02-03 02:17:54,275 - ParkinsonsAnalysis - INFO -     max_depth: 15
+2025-02-03 02:17:54,275 - ParkinsonsAnalysis - INFO -     learning_rate: 0.04200888491998378
+2025-02-03 02:17:54,320 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 02:17:54,320 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:17:54,569 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:17:54,573 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 02:21:33,398 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 02:21:33,399 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 02:21:33,399 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 02:21:33,399 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 02:21:33,403 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 02:21:33,403 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 02:21:33,437 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 02:21:33,437 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 02:21:33,437 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 02:21:33,445 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 02:21:33,446 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 02:21:33,446 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 02:21:33,448 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 02:21:33,455 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 02:22:47,776 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 02:22:47,776 - ParkinsonsAnalysis - INFO -   Value: 0.9169354838709678
+2025-02-03 02:22:47,776 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:22:47,776 - ParkinsonsAnalysis - INFO -     n_estimators: 92
+2025-02-03 02:22:47,777 - ParkinsonsAnalysis - INFO -     max_depth: 13
+2025-02-03 02:22:47,777 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 02:22:47,777 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 02:22:47,875 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 02:22:47,875 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:22:48,222 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:22:51,183 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 02:22:51,184 - ParkinsonsAnalysis - INFO -   Value: 0.9296370967741936
+2025-02-03 02:22:51,184 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:22:51,184 - ParkinsonsAnalysis - INFO -     max_depth: 4
+2025-02-03 02:22:51,184 - ParkinsonsAnalysis - INFO -     min_samples_split: 6
+2025-02-03 02:22:51,184 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 02:22:51,186 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 02:22:51,187 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:22:51,463 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:23:08,263 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 02:23:08,263 - ParkinsonsAnalysis - INFO -   Value: 0.9165322580645162
+2025-02-03 02:23:08,263 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 02:23:08,263 - ParkinsonsAnalysis - INFO -     n_estimators: 72
+2025-02-03 02:23:08,264 - ParkinsonsAnalysis - INFO -     max_depth: 7
+2025-02-03 02:23:08,264 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1690878532860304
+2025-02-03 02:23:08,282 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 02:23:08,282 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 02:23:08,545 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 02:23:08,548 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 09:22:01,040 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 09:22:01,040 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 09:22:01,050 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 09:22:01,050 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 09:22:01,056 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 09:22:01,056 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 09:22:01,083 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 09:22:01,083 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 09:22:01,084 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 09:22:01,094 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 09:22:01,094 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 09:22:01,095 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 09:22:01,098 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 09:22:01,099 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 09:22:01,099 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 09:22:01,103 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.75641
+0    0.24359
+Name: proportion, dtype: float64
+2025-02-03 09:22:01,104 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 09:22:01,104 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 09:23:41,934 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 09:23:41,934 - ParkinsonsAnalysis - INFO -   Value: 0.904233870967742
+2025-02-03 09:23:41,934 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:23:41,934 - ParkinsonsAnalysis - INFO -     n_estimators: 273
+2025-02-03 09:23:41,935 - ParkinsonsAnalysis - INFO -     max_depth: 11
+2025-02-03 09:23:41,935 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-03 09:23:41,935 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-03 09:23:41,935 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 09:23:42,209 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 09:23:42,211 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:23:42,628 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:23:45,840 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 09:23:45,841 - ParkinsonsAnalysis - INFO -   Value: 0.9296370967741936
+2025-02-03 09:23:45,841 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:23:45,841 - ParkinsonsAnalysis - INFO -     max_depth: 8
+2025-02-03 09:23:45,841 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-03 09:23:45,841 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 3
+2025-02-03 09:23:45,841 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 09:23:45,845 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 09:23:45,845 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:23:46,109 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:24:27,615 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 09:24:27,615 - ParkinsonsAnalysis - INFO -   Value: 0.916733870967742
+2025-02-03 09:24:27,616 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:24:27,616 - ParkinsonsAnalysis - INFO -     n_estimators: 287
+2025-02-03 09:24:27,616 - ParkinsonsAnalysis - INFO -     max_depth: 12
+2025-02-03 09:24:27,616 - ParkinsonsAnalysis - INFO -     learning_rate: 0.16508049090782206
+2025-02-03 09:24:27,616 - ParkinsonsAnalysis - INFO -     subsample: 0.7654061785509563
+2025-02-03 09:24:27,717 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 09:24:27,717 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:24:28,074 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:24:28,080 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 09:26:41,283 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 09:26:41,283 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 09:26:41,284 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 09:26:41,284 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 09:26:41,289 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 09:26:41,289 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 09:26:41,318 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 09:26:41,318 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 09:26:41,318 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 09:26:41,327 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 09:26:41,328 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 09:26:41,329 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 09:26:41,332 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 09:26:41,333 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 09:26:41,334 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 09:26:41,338 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.75641
+0    0.24359
+Name: proportion, dtype: float64
+2025-02-03 09:26:41,341 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 09:26:41,342 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 09:31:31,404 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 09:31:31,404 - ParkinsonsAnalysis - INFO -   Value: 0.9169354838709678
+2025-02-03 09:31:31,405 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:31:31,405 - ParkinsonsAnalysis - INFO -     n_estimators: 77
+2025-02-03 09:31:31,405 - ParkinsonsAnalysis - INFO -     max_depth: 10
+2025-02-03 09:31:31,406 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 09:31:31,406 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 09:31:31,406 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 09:31:31,538 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 09:31:31,539 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:31:32,084 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:31:48,730 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 09:31:48,731 - ParkinsonsAnalysis - INFO -   Value: 0.9360887096774194
+2025-02-03 09:31:48,731 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:31:48,732 - ParkinsonsAnalysis - INFO -     max_depth: 3
+2025-02-03 09:31:48,732 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-03 09:31:48,733 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-03 09:31:48,733 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 09:31:48,738 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 09:31:48,739 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:31:49,200 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:33:14,916 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 09:33:14,916 - ParkinsonsAnalysis - INFO -   Value: 0.922983870967742
+2025-02-03 09:33:14,916 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:33:14,916 - ParkinsonsAnalysis - INFO -     n_estimators: 259
+2025-02-03 09:33:14,916 - ParkinsonsAnalysis - INFO -     max_depth: 11
+2025-02-03 09:33:14,918 - ParkinsonsAnalysis - INFO -     learning_rate: 0.17770051512468016
+2025-02-03 09:33:14,918 - ParkinsonsAnalysis - INFO -     subsample: 0.9323018164229824
+2025-02-03 09:33:15,004 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 09:33:15,005 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:33:15,394 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:33:15,404 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 09:41:04,969 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 09:41:04,969 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 09:41:04,970 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 09:41:04,970 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 09:41:04,974 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 09:41:04,974 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 09:41:05,001 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 09:41:05,001 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 09:41:05,001 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 09:41:05,010 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 09:41:05,010 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 09:41:05,011 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 09:41:05,013 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 09:41:05,014 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 09:41:05,014 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 09:41:05,015 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.75641
+0    0.24359
+Name: proportion, dtype: float64
+2025-02-03 09:41:05,016 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 09:41:05,016 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 09:44:21,096 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 09:44:21,097 - ParkinsonsAnalysis - INFO -   Value: 0.9169354838709678
+2025-02-03 09:44:21,097 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:44:21,098 - ParkinsonsAnalysis - INFO -     n_estimators: 171
+2025-02-03 09:44:21,098 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-03 09:44:21,098 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 09:44:21,098 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 09:44:21,098 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 09:44:21,267 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 09:44:21,268 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:44:21,673 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:44:30,612 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 09:44:30,613 - ParkinsonsAnalysis - INFO -   Value: 0.9360887096774194
+2025-02-03 09:44:30,613 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:44:30,613 - ParkinsonsAnalysis - INFO -     max_depth: 7
+2025-02-03 09:44:30,613 - ParkinsonsAnalysis - INFO -     min_samples_split: 7
+2025-02-03 09:44:30,613 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-03 09:44:30,615 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 09:44:30,616 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 09:44:30,617 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:44:30,865 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:45:17,432 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 09:45:17,432 - ParkinsonsAnalysis - INFO -   Value: 0.922983870967742
+2025-02-03 09:45:17,432 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:45:17,432 - ParkinsonsAnalysis - INFO -     n_estimators: 101
+2025-02-03 09:45:17,433 - ParkinsonsAnalysis - INFO -     max_depth: 5
+2025-02-03 09:45:17,433 - ParkinsonsAnalysis - INFO -     learning_rate: 0.167700344160094
+2025-02-03 09:45:17,433 - ParkinsonsAnalysis - INFO -     subsample: 0.8799384424121487
+2025-02-03 09:45:17,476 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 09:45:17,476 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:45:17,971 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:45:17,976 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 09:47:28,688 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 09:47:28,688 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 09:47:28,689 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 09:47:28,690 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 09:47:28,696 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 09:47:28,696 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 09:47:28,742 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 09:47:28,742 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 09:47:28,743 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 09:47:28,754 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 09:47:28,754 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 09:47:28,755 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 09:47:28,758 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 09:47:28,758 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 09:47:28,759 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 09:47:28,761 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.75641
+0    0.24359
+Name: proportion, dtype: float64
+2025-02-03 09:47:28,762 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 09:47:28,763 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 09:51:57,902 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 09:51:57,902 - ParkinsonsAnalysis - INFO -   Value: 0.9231854838709678
+2025-02-03 09:51:57,902 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:51:57,903 - ParkinsonsAnalysis - INFO -     n_estimators: 192
+2025-02-03 09:51:57,903 - ParkinsonsAnalysis - INFO -     max_depth: 7
+2025-02-03 09:51:57,903 - ParkinsonsAnalysis - INFO -     min_samples_split: 4
+2025-02-03 09:51:57,903 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 09:51:57,905 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 09:51:58,210 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 09:51:58,211 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:51:58,858 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:52:13,501 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 09:52:13,501 - ParkinsonsAnalysis - INFO -   Value: 0.9360887096774194
+2025-02-03 09:52:13,502 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:52:13,502 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-03 09:52:13,503 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 09:52:13,503 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 2
+2025-02-03 09:52:13,504 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 09:52:13,507 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 09:52:13,508 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:52:13,912 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:53:45,270 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 09:53:45,270 - ParkinsonsAnalysis - INFO -   Value: 0.922983870967742
+2025-02-03 09:53:45,271 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 09:53:45,271 - ParkinsonsAnalysis - INFO -     n_estimators: 214
+2025-02-03 09:53:45,271 - ParkinsonsAnalysis - INFO -     max_depth: 20
+2025-02-03 09:53:45,271 - ParkinsonsAnalysis - INFO -     learning_rate: 0.13085323089352494
+2025-02-03 09:53:45,272 - ParkinsonsAnalysis - INFO -     subsample: 0.9110655400025153
+2025-02-03 09:53:45,355 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 09:53:45,355 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 09:53:45,769 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 09:53:45,776 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 09:56:07,387 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 09:56:07,387 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 09:56:07,388 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 09:56:07,388 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 09:56:07,394 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 09:56:07,395 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 09:56:07,435 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 09:56:07,435 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 09:56:07,436 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 09:56:07,447 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 09:56:07,447 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 09:56:07,448 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 09:56:07,451 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 09:56:07,452 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 09:56:07,452 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 09:56:07,454 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.75641
+0    0.24359
+Name: proportion, dtype: float64
+2025-02-03 09:56:07,456 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 09:56:07,456 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 10:03:02,693 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 10:03:02,693 - ParkinsonsAnalysis - INFO -   Value: 0.9189749731967828
+2025-02-03 10:03:02,694 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 10:03:02,694 - ParkinsonsAnalysis - INFO -     n_estimators: 300
+2025-02-03 10:03:02,694 - ParkinsonsAnalysis - INFO -     max_depth: 12
+2025-02-03 10:03:02,694 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 10:03:02,694 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 10:03:02,695 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 10:03:03,103 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 10:03:03,103 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 10:03:03,562 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 10:03:32,530 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 10:03:32,530 - ParkinsonsAnalysis - INFO -   Value: 0.8618297815207147
+2025-02-03 10:03:32,530 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 10:03:32,531 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-03 10:03:32,531 - ParkinsonsAnalysis - INFO -     min_samples_split: 2
+2025-02-03 10:03:32,531 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 10:03:32,531 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 10:03:32,536 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 10:03:32,536 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 10:03:32,886 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 10:05:15,695 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 10:05:15,695 - ParkinsonsAnalysis - INFO -   Value: 0.9446836166124134
+2025-02-03 10:05:15,695 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 10:05:15,695 - ParkinsonsAnalysis - INFO -     n_estimators: 280
+2025-02-03 10:05:15,695 - ParkinsonsAnalysis - INFO -     max_depth: 12
+2025-02-03 10:05:15,696 - ParkinsonsAnalysis - INFO -     learning_rate: 0.061335263689364476
+2025-02-03 10:05:15,696 - ParkinsonsAnalysis - INFO -     subsample: 0.533920517595023
+2025-02-03 10:05:15,781 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 10:05:15,782 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 10:05:16,191 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 10:05:16,198 - ParkinsonsAnalysis - INFO - Completed train_models
+2025-02-03 12:16:02,791 - ParkinsonsAnalysis - INFO - DataPreprocessing initialized successfully
+2025-02-03 12:16:02,791 - ParkinsonsAnalysis - INFO - Starting drop_columns
+2025-02-03 12:16:02,791 - ParkinsonsAnalysis - INFO - Completed drop_columns
+2025-02-03 12:16:02,792 - ParkinsonsAnalysis - INFO - Starting standardize_features
+2025-02-03 12:16:02,795 - ParkinsonsAnalysis - INFO - Completed standardize_features
+2025-02-03 12:16:02,795 - ParkinsonsAnalysis - INFO - Starting handle_outliers
+2025-02-03 12:16:02,820 - ParkinsonsAnalysis - INFO - Completed handle_outliers
+2025-02-03 12:16:02,820 - ParkinsonsAnalysis - INFO - Starting get_data
+2025-02-03 12:16:02,820 - ParkinsonsAnalysis - INFO - Completed get_data
+2025-02-03 12:16:02,827 - ParkinsonsAnalysis - INFO - Able to initialize Model Training
+2025-02-03 12:16:02,827 - ParkinsonsAnalysis - INFO - Starting train_models
+2025-02-03 12:16:02,828 - ParkinsonsAnalysis - INFO - Starting split_data
+2025-02-03 12:16:02,830 - ParkinsonsAnalysis - INFO - Training set size: 156 (80.00%)
+2025-02-03 12:16:02,830 - ParkinsonsAnalysis - INFO - Test set size: 39 (20.00%)
+2025-02-03 12:16:02,830 - ParkinsonsAnalysis - INFO - Class Distribution:
+2025-02-03 12:16:02,831 - ParkinsonsAnalysis - INFO - Training set:
+status
+1    0.75641
+0    0.24359
+Name: proportion, dtype: float64
+2025-02-03 12:16:02,832 - ParkinsonsAnalysis - INFO - Test set:
+status
+1    0.74359
+0    0.25641
+Name: proportion, dtype: float64
+2025-02-03 12:16:02,833 - ParkinsonsAnalysis - INFO - Completed split_data
+2025-02-03 12:21:32,871 - ParkinsonsAnalysis - INFO - Best randomforest trial:
+2025-02-03 12:21:32,872 - ParkinsonsAnalysis - INFO -   Value: 0.9040891054879175
+2025-02-03 12:21:32,872 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 12:21:32,872 - ParkinsonsAnalysis - INFO -     n_estimators: 299
+2025-02-03 12:21:32,872 - ParkinsonsAnalysis - INFO -     max_depth: 12
+2025-02-03 12:21:32,872 - ParkinsonsAnalysis - INFO -     min_samples_split: 3
+2025-02-03 12:21:32,873 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 12:21:32,873 - ParkinsonsAnalysis - INFO -     class_weight: balanced
+2025-02-03 12:21:33,160 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for randomforest
+2025-02-03 12:21:33,160 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 12:21:33,464 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 12:21:54,690 - ParkinsonsAnalysis - INFO - Best decisiontree trial:
+2025-02-03 12:21:54,690 - ParkinsonsAnalysis - INFO -   Value: 0.8829595902192959
+2025-02-03 12:21:54,690 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 12:21:54,690 - ParkinsonsAnalysis - INFO -     max_depth: 14
+2025-02-03 12:21:54,691 - ParkinsonsAnalysis - INFO -     min_samples_split: 8
+2025-02-03 12:21:54,691 - ParkinsonsAnalysis - INFO -     min_samples_leaf: 1
+2025-02-03 12:21:54,691 - ParkinsonsAnalysis - INFO -     class_weight: None
+2025-02-03 12:21:54,713 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for decisiontree
+2025-02-03 12:21:54,713 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 12:21:55,078 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 12:23:23,926 - ParkinsonsAnalysis - INFO - Best xgboost trial:
+2025-02-03 12:23:23,927 - ParkinsonsAnalysis - INFO -   Value: 0.9299705828755245
+2025-02-03 12:23:23,927 - ParkinsonsAnalysis - INFO -   Params: 
+2025-02-03 12:23:23,927 - ParkinsonsAnalysis - INFO -     n_estimators: 132
+2025-02-03 12:23:23,927 - ParkinsonsAnalysis - INFO -     max_depth: 16
+2025-02-03 12:23:23,927 - ParkinsonsAnalysis - INFO -     learning_rate: 0.1594080410419194
+2025-02-03 12:23:23,928 - ParkinsonsAnalysis - INFO -     subsample: 0.9407783200217108
+2025-02-03 12:23:24,013 - ParkinsonsAnalysis - INFO - Initialized Model Evaluation for xgboost
+2025-02-03 12:23:24,014 - ParkinsonsAnalysis - INFO - Starting evaluate
+2025-02-03 12:23:24,358 - ParkinsonsAnalysis - INFO - Completed evaluate
+2025-02-03 12:23:24,366 - ParkinsonsAnalysis - INFO - Completed train_models

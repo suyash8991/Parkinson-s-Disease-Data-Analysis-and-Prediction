@@ -3,49 +3,98 @@ Model Comparison Report
 
 Model: RANDOMFOREST
 Classification Metrics:
-Precision: 0.9736
-Recall: 0.9665
-F1-Score: 0.9692
-ROC AUC: 0.9873
+Precision: 0.8974
+Recall: 0.8974
+F1-Score: 0.8974
+ROC AUC: 0.9345
 
-Best Hyperparameters:
-  n_estimators: 110
-  max_depth: 20
-  min_samples_split: 6
-  min_samples_leaf: 3
-  class_weight: None
-
+Confusion Matrix Details:
+Confusion Matrix Report:
 ==============================
 
-Model: DECISIONTREE
-Classification Metrics:
-Precision: 0.9808
-Recall: 0.9749
-F1-Score: 0.9769
-ROC AUC: 0.9380
+   Predicted -> |   Negative |   Positive
+-----------------------------------------
+Negative (Actual) |         27 |          2
+                |      93.10% |       6.90%
+
+Positive (Actual) |          2 |          8
+                |      20.00% |      80.00%
+
+Performance Summary:
+Total Samples:            39
+Correct Predictions:      35 (89.74%)
+Misclassifications:       4 (10.26%)
 
 Best Hyperparameters:
+  n_estimators: 299
   max_depth: 12
-  min_samples_split: 5
+  min_samples_split: 3
   min_samples_leaf: 1
   class_weight: balanced
 
 ==============================
 
-Model: XGBOOST
+Model: DECISIONTREE
 Classification Metrics:
-Precision: 0.9736
-Recall: 0.9665
-F1-Score: 0.9692
-ROC AUC: 0.9891
+Precision: 0.8770
+Recall: 0.8718
+F1-Score: 0.8737
+ROC AUC: 0.8690
+
+Confusion Matrix Details:
+Confusion Matrix Report:
+==============================
+
+   Predicted -> |   Negative |   Positive
+-----------------------------------------
+Negative (Actual) |         26 |          3
+                |      89.66% |      10.34%
+
+Positive (Actual) |          2 |          8
+                |      20.00% |      80.00%
+
+Performance Summary:
+Total Samples:            39
+Correct Predictions:      34 (87.18%)
+Misclassifications:       5 (12.82%)
 
 Best Hyperparameters:
-  n_estimators: 289
-  max_depth: 10
-  learning_rate: 0.019919950856826338
-  subsample: 0.6791260643765352
-  colsample_bytree: 0.9947081275003855
-  scale_pos_weight: 0.8726541280306879
+  max_depth: 14
+  min_samples_split: 8
+  min_samples_leaf: 1
+  class_weight: None
+
+==============================
+
+Model: XGBOOST
+Classification Metrics:
+Precision: 0.9219
+Recall: 0.9231
+F1-Score: 0.9217
+ROC AUC: 0.9103
+
+Confusion Matrix Details:
+Confusion Matrix Report:
+==============================
+
+   Predicted -> |   Negative |   Positive
+-----------------------------------------
+Negative (Actual) |         28 |          1
+                |      96.55% |       3.45%
+
+Positive (Actual) |          2 |          8
+                |      20.00% |      80.00%
+
+Performance Summary:
+Total Samples:            39
+Correct Predictions:      36 (92.31%)
+Misclassifications:       3 (7.69%)
+
+Best Hyperparameters:
+  n_estimators: 132
+  max_depth: 16
+  learning_rate: 0.1594080410419194
+  subsample: 0.9407783200217108
 
 ==============================
 
